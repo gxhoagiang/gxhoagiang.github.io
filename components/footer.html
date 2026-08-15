@@ -1,0 +1,159 @@
+<style>
+  /* Xóa bỏ màu nền của thẻ cha/footer bên ngoài để mất dải full màn hình */
+  footer,
+  #footer-placeholder {
+    background: transparent !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  /* Khối footer chính (thu gọn, bo góc, căn giữa) */
+  .footer-wrapper {
+    background-color: #0f2b5c;
+    color: #fff;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px 20px 20px 20px;
+    border-radius: 16px;
+    box-sizing: border-box;
+  }
+  .footer-wrapper .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  .footer-wrapper .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .footer-wrapper a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-wrapper a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="footer-wrapper">
+  <div class="footer-grid">
+    <div>
+      <h4
+        class="footer-title"
+        style="
+          color: rgb(235, 170, 40);
+          font-family: &quot;Playfair Display&quot;, serif;
+          font-size: 1.3rem;
+          margin-bottom: 10px;
+        "
+      >
+        GIÁO XỨ HÒA GIANG
+        <p
+          class="footer-sub"
+          style="
+            font-size: 0.9rem;
+            color: #f0f0f0;
+            font-weight: 500;
+            margin: 4px 0 0 0;
+            text-transform: none;
+          "
+        >
+          Xứ Đoàn Phê-rô Đoàn Công Quý
+        </p>
+      </h4>
+      <p style="margin: 10px 0 8px 0; line-height: 1.5; color: #e0e0e0">
+        📍 Địa chỉ: 128 tổ 5, ấp Kinh I, xã Hòa Điền, tỉnh An Giang
+      </p>
+      <p style="margin: 6px 0">
+        <a href="tel:xxx xxx xxxx" style="color: #fff; text-decoration: none"
+          >📞 Trưởng Xứ Đoàn</a
+        >
+      </p>
+      <p style="margin: 6px 0">
+        <a href="tel:xxx xxx xxxx" style="color: #fff; text-decoration: none"
+          >📞 Ban Truyền Thông</a
+        >
+      </p>
+      <p style="margin: 6px 0">
+        <a
+          href="mailto:gxhoagiang1997@gmail.com"
+          target="_blank"
+          style="color: #fff; text-decoration: none"
+          >📧 Email</a
+        >
+      </p>
+    </div>
+    <div>
+      <h4
+        style="
+          color: rgb(235, 170, 40);
+          font-family: &quot;Playfair Display&quot;, serif;
+          font-size: 1.3rem;
+          margin-bottom: 12px;
+        "
+      >
+        Liên Kết Nhanh
+      </h4>
+      <p>
+        <a href="https://www.youtube.com/@giaoxuhoagiang1997" target="_blank"
+          ><img
+            src="./img/youtube_icon.webp"
+            alt="youtube"
+            width="25px"
+            style="vertical-align: middle; margin-right: 5px"
+          />YouTube Giáo Xứ</a
+        >
+      </p>
+      <p>
+        <a href="tin-tuc.html"
+          ><img
+            src="./img/tin_tuc_icon.webp"
+            alt="tin tuc"
+            width="25px"
+            style="vertical-align: middle; margin-right: 5px"
+          />Tin Tức Giáo Xứ</a
+        >
+      </p>
+      <p>
+        <a href="to-chuc.html"
+          ><img
+            src="./img/logo.png"
+            alt="thieu nhi"
+            width="25px"
+            style="vertical-align: middle; margin-right: 5px"
+          />Xứ Đoàn Thiếu Nhi</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.facebook.com/gxhoagiangxdpherodoancongquy"
+          target="_blank"
+        >
+          <img
+            src="./img/fanbage_icon.webp"
+            alt="facebook"
+            width="25px"
+            style="vertical-align: middle; margin-right: 5px"
+          />FanBage Giáo Xứ</a
+        >
+      </p>
+      <p>
+        <a href="https://www.tiktok.com/@gxhoagiang" target="_blank"
+          ><img
+            src="./img/tiktok_icon.webp"
+            alt="tiktok"
+            width="25px"
+            style="vertical-align: middle; margin-right: 5px"
+          />TikTok Ban Truyền Thông Giáo Xứ</a
+        >
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Ban Truyền Thông Giáo Xứ Hòa Giang.
+  </div>
+</div>
