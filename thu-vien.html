@@ -1,296 +1,220 @@
 <!doctype html>
 <html lang="vi">
-  <head>
-    <meta property="og:site_name" content="Giáo Xứ Hòa Giang" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thư Viện Hình Ảnh - Giáo Xứ Hòa Giang</title>
-    <!-- add favicon -->
-        <!-- Favicon Google & Trình duyệt web -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./favicon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon.png"
-    />
 
-    <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-icon-180x180.png"
-    />
+<head>
+  <meta property="og:site_name" content="Giáo Xứ Hòa Giang" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thư Viện Hình Ảnh - Giáo Xứ Hòa Giang</title>
+  <!-- add favicon -->
+  <!-- Favicon Google & Trình duyệt web -->
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+
+  <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
 
 
 
-    <!-- Android & PWA & Windows -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./favicon.png"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+  <!-- Android & PWA & Windows -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <style>
-      /* Nút Tải về trong Modal */
-      .modal-download {
-        position: absolute;
-        top: 20px;
-        right: 80px; /* Nằm ngay bên trái nút X đóng modal */
-        color: #fff;
-        background: rgba(255, 255, 255, 0.2);
-        padding: 8px 16px;
-        border-radius: 20px;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 14px;
-        font-weight: 600;
-        backdrop-filter: blur(5px);
-        transition: background 0.3s ease;
-        z-index: 1001;
-      }
+  <style>
+    /* Nút Tải về trong Modal */
+    .modal-download {
+      position: absolute;
+      top: 20px;
+      right: 80px;
+      /* Nằm ngay bên trái nút X đóng modal */
+      color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      backdrop-filter: blur(5px);
+      transition: background 0.3s ease;
+      z-index: 1001;
+    }
 
-      .modal-download:hover {
-        background: rgba(255, 255, 255, 0.4);
-        color: #fff;
-      }
-      /* Layout Lưới Thư Viện Ảnh */
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 20px;
-        margin-top: 25px;
-      }
+    .modal-download:hover {
+      background: rgba(255, 255, 255, 0.4);
+      color: #fff;
+    }
 
-      .gallery-card {
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
-        cursor: pointer;
-      }
+    /* Layout Lưới Thư Viện Ảnh */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
 
-      .gallery-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      }
+    .gallery-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+      cursor: pointer;
+    }
 
-      .gallery-card img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        display: block;
-      }
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
 
-      /* Modal Phóng To Ảnh (Lightbox) */
-      .modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.88);
-        justify-content: center;
-        align-items: center;
-      }
+    .gallery-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
 
-      .modal img {
-        max-width: 90%;
-        max-height: 85vh;
-        border-radius: 8px;
-        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
-      }
+    /* Modal Phóng To Ảnh (Lightbox) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.88);
+      justify-content: center;
+      align-items: center;
+    }
 
-      .modal-close {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        color: #fff;
-        font-size: 35px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header tự động nhúng qua JS -->
-    <header id="header-placeholder"></header>
+    .modal img {
+      max-width: 90%;
+      max-height: 85vh;
+      border-radius: 8px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    }
 
-    <main class="container section-padding">
-      <div class="page-header" style="text-align: center; margin-bottom: 30px">
-        <h1
-          style="color: var(--navy-blue); font-size: 2rem; margin-bottom: 10px"
-        >
-          THƯ VIỆN HÌNH ẢNH
-        </h1>
-        <p style="color: #666">
-          Lưu giữ những khoảnh khắc sinh hoạt & phụng vụ tại Giáo Xứ Hòa Giang
-        </p>
-      </div>
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 35px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
 
-      <!-- Khung chứa danh sách ảnh -->
-      <div class="gallery-grid" id="gallery-container"></div>
-    </main>
+<body>
+  <!-- Header tự động nhúng qua JS -->
+  <header id="header-placeholder"></header>
 
-    <!-- Popup xem ảnh phóng to -->
-    <div id="image-modal" class="modal" onclick="closeModal(event)">
-      <span class="modal-close" onclick="closeModal(event)">&times;</span>
-
-      <!-- Nút Download có hình Icon tải xuống -->
-      <a
-        id="modal-download"
-        class="modal-download"
-        href=""
-        download
-        onclick="event.stopPropagation()"
-      >
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-          <polyline points="7 10 12 15 17 10"></polyline>
-          <line x1="12" y1="15" x2="12" y2="3"></line>
-        </svg>
-        Tải về
-      </a>
-
-      <img
-        id="modal-img"
-        src=""
-        alt="Ảnh phóng to"
-        onclick="event.stopPropagation()"
-      />
+  <main class="container section-padding">
+    <div class="page-header" style="text-align: center; margin-bottom: 30px">
+      <h1 style="color: var(--navy-blue); font-size: 2rem; margin-bottom: 10px">
+        THƯ VIỆN HÌNH ẢNH
+      </h1>
+      <p style="color: #666">
+        Lưu giữ những khoảnh khắc sinh hoạt & phụng vụ tại Giáo Xứ Hòa Giang
+      </p>
     </div>
 
-    <!-- Footer tự động nhúng qua JS -->
-    <footer id="footer-placeholder"></footer>
+    <!-- Khung chứa danh sách ảnh -->
+    <div class="gallery-grid" id="gallery-container"></div>
+  </main>
 
-    <script src="js/script.js" defer></script>
-    <script>
-      // =========================================================
-      // 1. ĐIỀN TỔNG SỐ LƯỢNG ẢNH BẠN ĐANG CÓ VÀO ĐÂY:
-      // =========================================================
-      const TOTAL_IMAGES = 789;
+  <!-- Popup xem ảnh phóng to -->
+  <div id="image-modal" class="modal" onclick="closeModal(event)">
+    <span class="modal-close" onclick="closeModal(event)">&times;</span>
 
-      const galleryContainer = document.getElementById("gallery-container");
-      let htmlContent = "";
+    <!-- Nút Download có hình Icon tải xuống -->
+    <a id="modal-download" class="modal-download" href="" download onclick="event.stopPropagation()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      Tải về
+    </a>
 
-      // Vòng lặp tạo lưới ảnh (từ ảnh mới nhất về ảnh 1)
-      for (let i = TOTAL_IMAGES; i >= 1; i--) {
-        // Tạo tên file chuyên nghiệp khi tải về (VD: GX-HoaGiang-079.jpg)
-        const paddedNumber = String(i).padStart(3, "0");
-        const downloadName = `GX-HoaGiang-${paddedNumber}.jpg`;
-        const imageSrc = `./thu_vien/${i}.jpg`;
+    <img id="modal-img" src="" alt="Ảnh phóng to" onclick="event.stopPropagation()" />
+  </div>
 
-        htmlContent += `
+  <!-- Footer tự động nhúng qua JS -->
+  <footer id="footer-placeholder"></footer>
+
+  <script src="js/script.js" defer></script>
+  <script>
+    // =========================================================
+    // 1. ĐIỀN TỔNG SỐ LƯỢNG ẢNH BẠN ĐANG CÓ VÀO ĐÂY:
+    // =========================================================
+    const TOTAL_IMAGES = 789;
+
+    const galleryContainer = document.getElementById("gallery-container");
+    let htmlContent = "";
+
+    // Vòng lặp tạo lưới ảnh (từ ảnh mới nhất về ảnh 1)
+    for (let i = TOTAL_IMAGES; i >= 1; i--) {
+      // Tạo tên file chuyên nghiệp khi tải về (VD: GX-HoaGiang-079.jpg)
+      const paddedNumber = String(i).padStart(3, "0");
+      const downloadName = `GX-HoaGiang-${paddedNumber}.jpg`;
+      const imageSrc = `./thu_vien/${i}.jpg`;
+
+      htmlContent += `
               <div class="gallery-card" onclick="openModal('${imageSrc}', '${downloadName}')">
                   <img src="${imageSrc}" alt="Giáo Xứ Hòa Giang" loading="lazy">
               </div>
           `;
-      }
+    }
 
-      galleryContainer.innerHTML = htmlContent;
+    galleryContainer.innerHTML = htmlContent;
 
-      // =========================================================
-      // 2. CÁC HÀM XỬ LÝ MODAL (PHÓNG TO & TẢI ẢNH)
-      // =========================================================
-      function openModal(src, fileName) {
-        const modal = document.getElementById("image-modal");
-        const modalImg = document.getElementById("modal-img");
-        const modalDownload = document.getElementById("modal-download");
+    // =========================================================
+    // 2. CÁC HÀM XỬ LÝ MODAL (PHÓNG TO & TẢI ẢNH)
+    // =========================================================
+    function openModal(src, fileName) {
+      const modal = document.getElementById("image-modal");
+      const modalImg = document.getElementById("modal-img");
+      const modalDownload = document.getElementById("modal-download");
 
-        modal.style.display = "flex";
-        modalImg.src = src;
+      modal.style.display = "flex";
+      modalImg.src = src;
 
-        // Gắn đường dẫn và tên file vào nút tải xuống có sẵn trên modal
-        modalDownload.href = src;
-        modalDownload.setAttribute("download", fileName);
-      }
+      // Gắn đường dẫn và tên file vào nút tải xuống có sẵn trên modal
+      modalDownload.href = src;
+      modalDownload.setAttribute("download", fileName);
+    }
 
-      function closeModal() {
-        document.getElementById("image-modal").style.display = "none";
-      }
-    </script>
-  </body>
+    function closeModal() {
+      document.getElementById("image-modal").style.display = "none";
+    }
+  </script>
+</body>
+
 </html>

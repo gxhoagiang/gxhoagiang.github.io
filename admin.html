@@ -1,331 +1,268 @@
 <!doctype html>
 <html lang="vi">
-  <head>
-    <script>
-      // Đổi "123456" thành mật khẩu bạn muốn
-      var password = prompt("Vui lòng nhập mật khẩu để truy cập Admin:");
-      if (password !== "10102010") {
-        alert("Sai mật khẩu! Truy cập bị từ chối.");
-        window.location.href = "index.html"; // Đẩy người dùng về trang chủ
-      }
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hohoangphucadmin</title>
-    <!-- add favicon -->
-        <!-- Favicon Google & Trình duyệt web -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./favicon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon.png"
-    />
 
-    <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-icon-180x180.png"
-    />
-    <!-- Android & PWA & Windows -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./favicon.png"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+<head>
+  <script>
+    // Đổi "123456" thành mật khẩu bạn muốn
+    var password = prompt("Vui lòng nhập mật khẩu để truy cập Admin:");
+    if (password !== "10102010") {
+      alert("Sai mật khẩu! Truy cập bị từ chối.");
+      window.location.href = "index.html"; // Đẩy người dùng về trang chủ
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hohoangphucadmin</title>
+  <!-- add favicon -->
+  <!-- Favicon Google & Trình duyệt web -->
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      :root {
-        --navy-blue: #1a2b4c;
-        --gold-accent: #c59b27;
-      }
-      .admin-container {
-        max-width: 900px;
-        margin: 30px auto;
-        background: #fff;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      }
-      .admin-section {
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eee;
-      }
-      .admin-section h3 {
-        color: var(--navy-blue);
-        margin-bottom: 15px;
-      }
-      .fund-admin-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        margin-bottom: 20px;
-      }
-      .fund-admin-card {
-        background: #f8f9fa;
-        padding: 20px;
-        border-radius: 8px;
-        border-left: 4px solid var(--gold-accent);
-      }
-      .fund-admin-card h4 {
-        margin: 0 0 10px 0;
-        color: var(--navy-blue);
-        font-size: 1rem;
-      }
-      .fund-admin-card p {
-        margin: 5px 0;
-        font-size: 0.95rem;
-        color: #555;
-      }
-      .form-group {
-        margin-bottom: 15px;
-      }
-      .form-group label {
-        display: block;
-        font-weight: 600;
-        margin-bottom: 5px;
-        color: #333;
-      }
-      .form-group input,
-      .form-group select {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        font-size: 1rem;
-      }
-      .admin-btn {
-        background: var(--navy-blue);
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 6px;
-        cursor: pointer;
-        font-weight: 600;
-        transition: background 0.3s;
-      }
-      .admin-btn:hover {
-        background: var(--gold-accent);
-      }
-      table.admin-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 15px;
-        font-size: 0.95ln;
-      }
-      table.admin-table th,
-      table.admin-table td {
-        padding: 12px;
-        border-bottom: 1px solid #eee;
-        text-align: left;
-      }
-      table.admin-table th {
-        background: var(--navy-blue);
-        color: #fff;
-      }
-    </style>
-  </head>
-  <body>
-    <header id="header-placeholder"></header>
+  <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
+  <!-- Android & PWA & Windows -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <main class="container section-padding">
-      <div class="admin-container">
-        <h1
-          style="
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    :root {
+      --navy-blue: #1a2b4c;
+      --gold-accent: #c59b27;
+    }
+
+    .admin-container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .admin-section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .admin-section h3 {
+      color: var(--navy-blue);
+      margin-bottom: 15px;
+    }
+
+    .fund-admin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .fund-admin-card {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid var(--gold-accent);
+    }
+
+    .fund-admin-card h4 {
+      margin: 0 0 10px 0;
+      color: var(--navy-blue);
+      font-size: 1rem;
+    }
+
+    .fund-admin-card p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .admin-btn {
+      background: var(--navy-blue);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .admin-btn:hover {
+      background: var(--gold-accent);
+    }
+
+    table.admin-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 0.95ln;
+    }
+
+    table.admin-table th,
+    table.admin-table td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    table.admin-table th {
+      background: var(--navy-blue);
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header-placeholder"></header>
+
+  <main class="container section-padding">
+    <div class="admin-container">
+      <h1 style="
             color: var(--navy-blue);
             text-align: center;
             margin-bottom: 25px;
-          "
-        >
-          HỆ THỐNG QUẢN TRỊ 3 QUỸ TỰ ĐỘNG
-        </h1>
+          ">
+        HỆ THỐNG QUẢN TRỊ 3 QUỸ TỰ ĐỘNG
+      </h1>
 
-        <!-- Phần 1: Tổng quan 3 quỹ theo tháng hiện tại -->
-        <div class="admin-section">
-          <div
-            style="
+      <!-- Phần 1: Tổng quan 3 quỹ theo tháng hiện tại -->
+      <div class="admin-section">
+        <div style="
               display: flex;
               justify-content: space-between;
               align-items: center;
               margin-bottom: 15px;
-            "
-          >
-            <h3 style="margin: 0">1. Tổng Quan 3 Tài Khoản / Quỹ</h3>
-            <span
-              id="current-month-label"
-              style="font-weight: 600; color: var(--gold-accent)"
-            ></span>
-          </div>
-          <div class="fund-admin-grid" id="admin-funds-summary">
-            <!-- Tự động nạp 3 khung quỹ -->
-          </div>
+            ">
+          <h3 style="margin: 0">1. Tổng Quan 3 Tài Khoản / Quỹ</h3>
+          <span id="current-month-label" style="font-weight: 600; color: var(--gold-accent)"></span>
         </div>
-
-        <!-- Phần 2: Nhật ký giao dịch trực tuyến -->
-        <div class="admin-section">
-          <h3>2. Nhật Ký Giao Dịch Chuyển Khoản Trực Tuyến</h3>
-          <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px">
-            Dữ liệu tự động đồng bộ khi có tiền vào các tài khoản quỹ.
-          </p>
-          <div style="overflow-x: auto">
-            <table class="admin-table">
-              <thead>
-                <tr>
-                  <th>Thời gian</th>
-                  <th>Tài khoản nhận</th>
-                  <th>Số tiền</th>
-                  <th>Nội dung</th>
-                </tr>
-              </thead>
-              <tbody id="transaction-list">
-                <tr>
-                  <td colspan="4" style="text-align: center; color: #666">
-                    Chưa có giao dịch phát sinh
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Phần 3: Cấu hình tài khoản ngân hàng -->
-        <div
-          class="admin-section"
-          style="border-bottom: none; margin-bottom: 0"
-        >
-          <h3>3. Cấu Hình Tài Khoản Nhận Tiền Cho Từng Quỹ</h3>
-          <form id="bank-config-form">
-            <div class="form-group">
-              <label>Chọn Quỹ / Tài Khoản Cần Cấu Hình:</label>
-              <select id="config-fund-select">
-                <option value="xaydung">Quỹ Xây Dựng Thánh Đường</option>
-                <option value="bacai">Quỹ Bác Ái Xã Hội</option>
-                <option value="chung">Quỹ Hoạt Động Chung Giáo Xứ</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Số Tài Khoản:</label>
-              <input
-                type="text"
-                id="config-stk"
-                placeholder="Nhập số tài khoản ngân hàng..."
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label>Tên Chủ Tài Khoản:</label>
-              <input
-                type="text"
-                id="config-holder"
-                placeholder="Ví dụ: GIAO XU HOA GIANG"
-                required
-              />
-            </div>
-            <button type="submit" class="admin-btn">Lưu Cấu Hình</button>
-          </form>
+        <div class="fund-admin-grid" id="admin-funds-summary">
+          <!-- Tự động nạp 3 khung quỹ -->
         </div>
       </div>
-    </main>
 
-    <footer id="footer-placeholder"></footer>
-    <script src="js/script.js" defer></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Tự động hiển thị tháng và năm hiện tại
-        const now = new Date();
-        const currentMonthYear = `Tháng ${String(now.getMonth() + 1).padStart(2, "0")}/${now.getFullYear()}`;
-        document.getElementById("current-month-label").textContent =
-          currentMonthYear;
+      <!-- Phần 2: Nhật ký giao dịch trực tuyến -->
+      <div class="admin-section">
+        <h3>2. Nhật Ký Giao Dịch Chuyển Khoản Trực Tuyến</h3>
+        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px">
+          Dữ liệu tự động đồng bộ khi có tiền vào các tài khoản quỹ.
+        </p>
+        <div style="overflow-x: auto">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Thời gian</th>
+                <th>Tài khoản nhận</th>
+                <th>Số tiền</th>
+                <th>Nội dung</th>
+              </tr>
+            </thead>
+            <tbody id="transaction-list">
+              <tr>
+                <td colspan="4" style="text-align: center; color: #666">
+                  Chưa có giao dịch phát sinh
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-        // Dữ liệu 3 quỹ mặc định 0đ khi chưa có giao dịch
-        const accounts = [
-          {
-            id: "xaydung",
-            name: "Quỹ Xây Dựng Thánh Đường",
-            income: 0,
-            expense: 0,
-          },
-          { id: "bacai", name: "Quỹ Bác Ái Xã Hội", income: 0, expense: 0 },
-          {
-            id: "chung",
-            name: "Quỹ Hoạt Động Chung Giáo Xứ",
-            income: 0,
-            expense: 0,
-          },
-        ];
+      <!-- Phần 3: Cấu hình tài khoản ngân hàng -->
+      <div class="admin-section" style="border-bottom: none; margin-bottom: 0">
+        <h3>3. Cấu Hình Tài Khoản Nhận Tiền Cho Từng Quỹ</h3>
+        <form id="bank-config-form">
+          <div class="form-group">
+            <label>Chọn Quỹ / Tài Khoản Cần Cấu Hình:</label>
+            <select id="config-fund-select">
+              <option value="xaydung">Quỹ Xây Dựng Thánh Đường</option>
+              <option value="bacai">Quỹ Bác Ái Xã Hội</option>
+              <option value="chung">Quỹ Hoạt Động Chung Giáo Xứ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Số Tài Khoản:</label>
+            <input type="text" id="config-stk" placeholder="Nhập số tài khoản ngân hàng..." required />
+          </div>
+          <div class="form-group">
+            <label>Tên Chủ Tài Khoản:</label>
+            <input type="text" id="config-holder" placeholder="Ví dụ: GIAO XU HOA GIANG" required />
+          </div>
+          <button type="submit" class="admin-btn">Lưu Cấu Hình</button>
+        </form>
+      </div>
+    </div>
+  </main>
 
-        let summaryHtml = "";
-        accounts.forEach((acc) => {
-          const balance = acc.income - acc.expense;
-          summaryHtml += `
+  <footer id="footer-placeholder"></footer>
+  <script src="js/script.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Tự động hiển thị tháng và năm hiện tại
+      const now = new Date();
+      const currentMonthYear = `Tháng ${String(now.getMonth() + 1).padStart(2, "0")}/${now.getFullYear()}`;
+      document.getElementById("current-month-label").textContent =
+        currentMonthYear;
+
+      // Dữ liệu 3 quỹ mặc định 0đ khi chưa có giao dịch
+      const accounts = [
+        {
+          id: "xaydung",
+          name: "Quỹ Xây Dựng Thánh Đường",
+          income: 0,
+          expense: 0,
+        },
+        { id: "bacai", name: "Quỹ Bác Ái Xã Hội", income: 0, expense: 0 },
+        {
+          id: "chung",
+          name: "Quỹ Hoạt Động Chung Giáo Xứ",
+          income: 0,
+          expense: 0,
+        },
+      ];
+
+      let summaryHtml = "";
+      accounts.forEach((acc) => {
+        const balance = acc.income - acc.expense;
+        summaryHtml += `
             <div class="fund-admin-card">
               <h4>${acc.name}</h4>
               <p>Thu: <strong style="color: #10b981;">+${acc.income.toLocaleString("vi-VN")} đ</strong></p>
@@ -333,26 +270,27 @@
               <p>Số dư: <strong style="color: var(--navy-blue);">${balance.toLocaleString("vi-VN")} đ</strong></p>
             </div>
           `;
-        });
-        document.getElementById("admin-funds-summary").innerHTML = summaryHtml;
       });
+      document.getElementById("admin-funds-summary").innerHTML = summaryHtml;
+    });
 
-      // Lưu cấu hình tài khoản
-      document
-        .getElementById("bank-config-form")
-        .addEventListener("submit", (e) => {
-          e.preventDefault();
-          const fundType = document.getElementById("config-fund-select").value;
-          const configData = {
-            stk: document.getElementById("config-stk").value,
-            holder: document.getElementById("config-holder").value,
-          };
-          localStorage.setItem(
-            `bank_config_${fundType}`,
-            JSON.stringify(configData),
-          );
-          alert("Đã lưu cấu hình tài khoản thành công!");
-        });
-    </script>
-  </body>
+    // Lưu cấu hình tài khoản
+    document
+      .getElementById("bank-config-form")
+      .addEventListener("submit", (e) => {
+        e.preventDefault();
+        const fundType = document.getElementById("config-fund-select").value;
+        const configData = {
+          stk: document.getElementById("config-stk").value,
+          holder: document.getElementById("config-holder").value,
+        };
+        localStorage.setItem(
+          `bank_config_${fundType}`,
+          JSON.stringify(configData),
+        );
+        alert("Đã lưu cấu hình tài khoản thành công!");
+      });
+  </script>
+</body>
+
 </html>

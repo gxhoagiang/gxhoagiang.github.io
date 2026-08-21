@@ -1,248 +1,169 @@
 <!doctype html>
 <html lang="vi">
-  <head>
-    <meta property="og:site_name" content="Giáo Xứ Hòa Giang" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lịch Phụng Vụ & Giờ Lễ - Giáo Xứ Hòa Giang</title>
-    <!-- add favicon -->
-        <!-- Favicon Google & Trình duyệt web -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./favicon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon.png"
-    />
 
-    <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-icon-180x180.png"
-    />
+<head>
+  <meta property="og:site_name" content="Giáo Xứ Hòa Giang" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lịch Phụng Vụ & Giờ Lễ - Giáo Xứ Hòa Giang</title>
+  <!-- add favicon -->
+  <!-- Favicon Google & Trình duyệt web -->
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+
+  <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
 
 
 
-    <!-- Android & PWA & Windows -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./favicon.png"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+  <!-- Android & PWA & Windows -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <!--  -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Header tự động nhúng qua JS -->
-    <header id="header-placeholder"></header>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!--  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <main class="container section-padding">
-      <article class="card" style="padding: 30px">
-        <!-- Khối tiêu đề ép căn giữa tuyệt đối -->
-        <div
-          style="
+<body>
+  <!-- Header tự động nhúng qua JS -->
+  <header id="header-placeholder"></header>
+
+  <main class="container section-padding">
+    <article class="card" style="padding: 30px">
+      <!-- Khối tiêu đề ép căn giữa tuyệt đối -->
+      <div style="
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center !important;
             width: 100%;
             margin-bottom: 30px;
-          "
-        >
-          <h1
-            class="card-title"
-            style="
+          ">
+        <h1 class="card-title" style="
               text-align: center !important;
               width: 100% !important;
               margin: 0 0 10px 0;
               font-size: 26px;
               color: var(--navy-blue);
-            "
-          >
-            Lịch Phụng Vụ &amp; Giờ Lễ Giáo Xứ Hòa Giang
-          </h1>
-          <p
-            style="
+            ">
+          Lịch Phụng Vụ &amp; Giờ Lễ Giáo Xứ Hòa Giang
+        </h1>
+        <p style="
               text-align: center !important;
               width: 100% !important;
               color: #666;
               margin: 0;
-            "
-          >
-            Cập nhật lịch phụng vụ và các ngày lễ trọng trong giáo xứ
-          </p>
-        </div>
+            ">
+          Cập nhật lịch phụng vụ và các ngày lễ trọng trong giáo xứ
+        </p>
+      </div>
 
-        <!-- 1. Lễ Chúa Nhật -->
-        <section class="schedule-section">
-          <h2>📅 Thánh Lễ Chúa Nhật</h2>
-          <div class="schedule-cards-container">
-            <!-- Thẻ 1: Lễ I -->
-            <div class="schedule-card">
-              <h3 class="schedule-card-title">Buổi Sáng - Lễ I</h3>
-              <div class="field">
-                <span class="field-label">Giờ Lễ:</span>
-                <span class="field-data highlight-time"
-                  >4:15 (Chuông I)<br />4h45 (Chuông II)</span
-                >
-              </div>
-              <div class="field">
-                <span class="field-label">Ghi Chú / Đối Tượng:</span>
-                <span class="field-data"
-                  >Lễ I: Dành cho cộng đoàn<br />Hát lễ: Ca đoàn CECILIA</span
-                >
-              </div>
+      <!-- 1. Lễ Chúa Nhật -->
+      <section class="schedule-section">
+        <h2>📅 Thánh Lễ Chúa Nhật</h2>
+        <div class="schedule-cards-container">
+          <!-- Thẻ 1: Lễ I -->
+          <div class="schedule-card">
+            <h3 class="schedule-card-title">Buổi Sáng - Lễ I</h3>
+            <div class="field">
+              <span class="field-label">Giờ Lễ:</span>
+              <span class="field-data highlight-time">4:15 (Chuông I)<br />4h45 (Chuông II)</span>
             </div>
-
-            <!-- Thẻ 2: Lễ II -->
-            <div class="schedule-card">
-              <h3 class="schedule-card-title">Buổi Sáng - Lễ II</h3>
-              <div class="field">
-                <span class="field-label">Giờ Lễ:</span>
-                <span class="field-data highlight-time"
-                  >7:00 (Chuông I)<br />7:30 (Chuông II)</span
-                >
-              </div>
-              <div class="field">
-                <span class="field-label">Ghi Chú / Đối Tượng:</span>
-                <span class="field-data"
-                  >Lễ II: Dành cho Thiếu nhi<br />Hát lễ: Ca đoàn TERESA</span
-                >
-              </div>
+            <div class="field">
+              <span class="field-label">Ghi Chú / Đối Tượng:</span>
+              <span class="field-data">Lễ I: Dành cho cộng đoàn<br />Hát lễ: Ca đoàn CECILIA</span>
             </div>
           </div>
-        </section>
 
-        <!-- 2. Lễ Ngày Thường -->
-        <section class="schedule-section" style="margin-top: 35px">
-          <h2>📅 Thánh Lễ Ngày Thường</h2>
-          <div class="schedule-cards-container">
-            <!-- Thẻ 1: Thứ Hai - Ba - Tư - Sáu -->
-            <div class="schedule-card">
-              <h3 class="schedule-card-title">Thứ Hai - Ba - Tư - Sáu</h3>
-              <div class="field">
-                <span class="field-label">Giờ Lễ Sáng:</span>
-                <span class="field-data highlight-time"
-                  >4:15 (Chuông I)<br />4h45 (Chuông II)</span
-                >
-              </div>
-              <div class="field">
-                <span class="field-label">Giờ Lễ Chiều:</span>
-                <span class="field-data">(Không có Thánh Lễ)</span>
-              </div>
+          <!-- Thẻ 2: Lễ II -->
+          <div class="schedule-card">
+            <h3 class="schedule-card-title">Buổi Sáng - Lễ II</h3>
+            <div class="field">
+              <span class="field-label">Giờ Lễ:</span>
+              <span class="field-data highlight-time">7:00 (Chuông I)<br />7:30 (Chuông II)</span>
             </div>
-
-            <!-- Thẻ 2: Thứ Năm - Thứ Bảy -->
-            <div class="schedule-card">
-              <h3 class="schedule-card-title">Thứ Năm - Thứ Bảy</h3>
-              <div class="field">
-                <span class="field-label">Giờ Lễ Sáng:</span>
-                <span class="field-data highlight-time"
-                  >4:15 (Chuông I)<br />4h45 (Chuông II)</span
-                >
-              </div>
-              <div class="field">
-                <span class="field-label">Giờ Lễ Chiều:</span>
-                <span class="field-data highlight-time"
-                  >16:30 (Chuông I)<br />17:00 (Chuông II)</span
-                >
-              </div>
+            <div class="field">
+              <span class="field-label">Ghi Chú / Đối Tượng:</span>
+              <span class="field-data">Lễ II: Dành cho Thiếu nhi<br />Hát lễ: Ca đoàn TERESA</span>
             </div>
           </div>
-        </section>
-
-        <!-- 3. Lễ Bổn Mạng & Dịp Đặc Biệt -->
-        <section class="schedule-section" style="margin-top: 35px">
-          <h2>🌟 Lễ Bổn Mạng & Các Dịp Trọng Thể</h2>
-          <ul class="schedule-list">
-            <li style="color: red; text-align: center; font-weight: 600">
-              Không có
-            </li>
-          </ul>
-        </section>
-
-        <!-- Nút quay lại -->
-        <div style="margin-top: 30px; text-align: center">
-          <a href="index.html" class="card-link">&larr; Quay lại Trang Chủ</a>
         </div>
-      </article>
-    </main>
+      </section>
 
-    <!-- Footer tự động nhúng qua JS -->
-    <footer id="footer-placeholder"></footer>
+      <!-- 2. Lễ Ngày Thường -->
+      <section class="schedule-section" style="margin-top: 35px">
+        <h2>📅 Thánh Lễ Ngày Thường</h2>
+        <div class="schedule-cards-container">
+          <!-- Thẻ 1: Thứ Hai - Ba - Tư - Sáu -->
+          <div class="schedule-card">
+            <h3 class="schedule-card-title">Thứ Hai - Ba - Tư - Sáu</h3>
+            <div class="field">
+              <span class="field-label">Giờ Lễ Sáng:</span>
+              <span class="field-data highlight-time">4:15 (Chuông I)<br />4h45 (Chuông II)</span>
+            </div>
+            <div class="field">
+              <span class="field-label">Giờ Lễ Chiều:</span>
+              <span class="field-data">(Không có Thánh Lễ)</span>
+            </div>
+          </div>
 
-    <script src="js/script.js" defer></script>
-  </body>
+          <!-- Thẻ 2: Thứ Năm - Thứ Bảy -->
+          <div class="schedule-card">
+            <h3 class="schedule-card-title">Thứ Năm - Thứ Bảy</h3>
+            <div class="field">
+              <span class="field-label">Giờ Lễ Sáng:</span>
+              <span class="field-data highlight-time">4:15 (Chuông I)<br />4h45 (Chuông II)</span>
+            </div>
+            <div class="field">
+              <span class="field-label">Giờ Lễ Chiều:</span>
+              <span class="field-data highlight-time">16:30 (Chuông I)<br />17:00 (Chuông II)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Lễ Bổn Mạng & Dịp Đặc Biệt -->
+      <section class="schedule-section" style="margin-top: 35px">
+        <h2>🌟 Lễ Bổn Mạng & Các Dịp Trọng Thể</h2>
+        <ul class="schedule-list">
+          <li style="color: red; text-align: center; font-weight: 600">
+            Không có
+          </li>
+        </ul>
+      </section>
+
+      <!-- Nút quay lại -->
+      <div style="margin-top: 30px; text-align: center">
+        <a href="index.html" class="card-link">&larr; Quay lại Trang Chủ</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer tự động nhúng qua JS -->
+  <footer id="footer-placeholder"></footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+
 </html>

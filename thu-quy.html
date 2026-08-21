@@ -1,227 +1,175 @@
 <!doctype html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sổ Quỹ Đóng Góp - Giáo Xứ Hòa Giang</title>
-    <!-- add favicon -->
-        <!-- Favicon Google & Trình duyệt web -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./favicon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon.png"
-    />
 
-    <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-icon-180x180.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sổ Quỹ Đóng Góp - Giáo Xứ Hòa Giang</title>
+  <!-- add favicon -->
+  <!-- Favicon Google & Trình duyệt web -->
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+
+  <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
 
 
 
-    <!-- Android & PWA & Windows -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./favicon.png"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+  <!-- Android & PWA & Windows -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      :root {
-        --navy-blue: #1a2b4c;
-        --gold-accent: #c59b27;
-      }
-      .fund-container {
-        max-width: 800px;
-        margin: 30px auto;
-      }
-      .fund-card {
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-        margin-bottom: 25px;
-        overflow: hidden;
-        border: 1px solid #eaeaea;
-      }
-      .fund-card-header {
-        background: var(--navy-blue);
-        color: #fff;
-        padding: 15px 20px;
-        font-size: 1.1rem;
-        font-weight: 600;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .fund-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 14px 20px;
-        border-bottom: 1px solid #f0f0f0;
-      }
-      .fund-row:last-child {
-        border-bottom: none;
-      }
-      .fund-label {
-        font-weight: 600;
-        color: #444;
-        font-size: 0.95rem;
-      }
-      .fund-value {
-        font-size: 0.95rem;
-        color: #333;
-        text-align: right;
-      }
-      .text-income {
-        color: #10b981;
-        font-weight: 600;
-      }
-      .text-expense {
-        color: #ef4444;
-        font-weight: 600;
-      }
-      .text-balance {
-        color: var(--navy-blue);
-        font-weight: 700;
-      }
-    </style>
-  </head>
-  <body>
-    <header id="header-placeholder"></header>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    :root {
+      --navy-blue: #1a2b4c;
+      --gold-accent: #c59b27;
+    }
 
-    <main class="container section-padding">
-      <div class="page-header" style="text-align: center; margin-bottom: 25px">
-        <h1
-          style="color: var(--navy-blue); font-size: 1.8rem; margin-bottom: 8px"
-        >
-          SỔ QUỸ ĐÓNG GÓP TỪNG TÀI KHOẢN
-        </h1>
-        <p
-          style="
+    .fund-container {
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    .fund-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      margin-bottom: 25px;
+      overflow: hidden;
+      border: 1px solid #eaeaea;
+    }
+
+    .fund-card-header {
+      background: var(--navy-blue);
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .fund-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .fund-row:last-child {
+      border-bottom: none;
+    }
+
+    .fund-label {
+      font-weight: 600;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .fund-value {
+      font-size: 0.95rem;
+      color: #333;
+      text-align: right;
+    }
+
+    .text-income {
+      color: #10b981;
+      font-weight: 600;
+    }
+
+    .text-expense {
+      color: #ef4444;
+      font-weight: 600;
+    }
+
+    .text-balance {
+      color: var(--navy-blue);
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header-placeholder"></header>
+
+  <main class="container section-padding">
+    <div class="page-header" style="text-align: center; margin-bottom: 25px">
+      <h1 style="color: var(--navy-blue); font-size: 1.8rem; margin-bottom: 8px">
+        SỔ QUỸ ĐÓNG GÓP TỪNG TÀI KHOẢN
+      </h1>
+      <p style="
             color: #666;
             font-size: 0.95rem;
             max-width: 600px;
             margin: 0 auto;
-          "
-        >
-          Minh bạch tài chính chi tiết theo từng quỹ và số tài khoản của giáo
-          xứ.
-        </p>
-      </div>
+          ">
+        Minh bạch tài chính chi tiết theo từng quỹ và số tài khoản của giáo
+        xứ.
+      </p>
+    </div>
 
-      <!-- Khu vực hiển thị 3 khung riêng biệt -->
-      <div class="fund-container" id="funds-grid-container">
-        <!-- Dữ liệu sẽ tự động nạp vào 3 khung -->
-      </div>
-    </main>
+    <!-- Khu vực hiển thị 3 khung riêng biệt -->
+    <div class="fund-container" id="funds-grid-container">
+      <!-- Dữ liệu sẽ tự động nạp vào 3 khung -->
+    </div>
+  </main>
 
-    <footer id="footer-placeholder"></footer>
-    <script src="js/script.js" defer></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const container = document.getElementById("funds-grid-container");
+  <footer id="footer-placeholder"></footer>
+  <script src="js/script.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("funds-grid-container");
 
-        // Lấy tháng và năm hiện tại tự động
-        const now = new Date();
-        const currentMonthYear = `Tháng ${String(now.getMonth() + 1).padStart(2, "0")}/${now.getFullYear()}`;
+      // Lấy tháng và năm hiện tại tự động
+      const now = new Date();
+      const currentMonthYear = `Tháng ${String(now.getMonth() + 1).padStart(2, "0")}/${now.getFullYear()}`;
 
-        // Danh sách 3 quỹ / tài khoản (Bạn có thể đổi tên tiêu đề tương ứng với 3 thẻ trên trang đóng góp)
-        const accounts = [
-          {
-            name: "Quỹ Xây Dựng Thánh Đường",
-            income: 0,
-            expense: 0,
-            note: "Chưa có giao dịch phát sinh",
-          },
-          {
-            name: "Quỹ Bác Ái Xã Hội",
-            income: 0,
-            expense: 0,
-            note: "Chưa có giao dịch phát sinh",
-          },
-          {
-            name: "Quỹ Ban Truyền Thông Giáo Xứ",
-            income: 0,
-            expense: 0,
-            note: "Chưa có giao dịch phát sinh",
-          },
-        ];
+      // Danh sách 3 quỹ / tài khoản (Bạn có thể đổi tên tiêu đề tương ứng với 3 thẻ trên trang đóng góp)
+      const accounts = [
+        {
+          name: "Quỹ Xây Dựng Thánh Đường",
+          income: 0,
+          expense: 0,
+          note: "Chưa có giao dịch phát sinh",
+        },
+        {
+          name: "Quỹ Bác Ái Xã Hội",
+          income: 0,
+          expense: 0,
+          note: "Chưa có giao dịch phát sinh",
+        },
+        {
+          name: "Quỹ Ban Truyền Thông Giáo Xứ",
+          income: 0,
+          expense: 0,
+          note: "Chưa có giao dịch phát sinh",
+        },
+      ];
 
-        let html = "";
-        accounts.forEach((acc) => {
-          const balance = acc.income - acc.expense;
-          html += `
+      let html = "";
+      accounts.forEach((acc) => {
+        const balance = acc.income - acc.expense;
+        html += `
             <div class="fund-card">
               <div class="fund-card-header">
                 <span>📁 ${acc.name}</span>
@@ -245,10 +193,11 @@
               </div>
             </div>
           `;
-        });
-
-        container.innerHTML = html;
       });
-    </script>
-  </body>
+
+      container.innerHTML = html;
+    });
+  </script>
+</body>
+
 </html>
