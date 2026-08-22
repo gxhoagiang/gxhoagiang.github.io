@@ -1,76 +1,125 @@
 <!doctype html>
 <html lang="vi">
+  <head>
+    <meta property="og:site_name" content="Giáo Xứ Hòa Giang" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Tin Tức & Thông Báo - Giáo Xứ Hòa Giang</title>
+    <!-- add favicon -->
+    <!-- Favicon Google & Trình duyệt web -->
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
 
-<head>
-  <meta property="og:site_name" content="Giáo Xứ Hòa Giang" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trang Tin Tức & Thông Báo - Giáo Xứ Hòa Giang</title>
-  <!-- add favicon -->
-  <!-- Favicon Google & Trình duyệt web -->
-  <link rel="icon" type="image/png" sizes="96x96" href="./favicon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+    <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-icon-180x180.png"
+    />
 
-  <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
-  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
+    <!-- Android & PWA & Windows -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Android & PWA & Windows -->
-  <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <!-- Header tự động nhúng qua JS -->
+    <header id="header-placeholder"></header>
 
-<body>
-  <!-- Header tự động nhúng qua JS -->
-  <header id="header-placeholder"></header>
-
-  <main class="container section-padding">
-    <!-- Tiêu đề trang -->
-    <div style="text-align: center; margin: 10px 0 25px 0">
-      <h1 style="
+    <main class="container section-padding">
+      <!-- Tiêu đề trang -->
+      <div style="text-align: center; margin: 10px 0 25px 0">
+        <h1
+          style="
             color: var(--navy-blue);
             font-size: 2rem;
             font-family: &quot;Playfair Display&quot;, serif;
             margin-bottom: 10px;
-          ">
-        Tin Tức & Thông Báo
-      </h1>
-      <p style="color: #666; font-size: 15px">
-        Cập nhật những tin tức, thông báo phụ vụ và hoạt động mới nhất của
-        Giáo Xứ Hòa Giang
-      </p>
-    </div>
+          "
+        >
+          Tin Tức & Thông Báo
+        </h1>
+        <p style="color: #666; font-size: 15px">
+          Cập nhật những tin tức, thông báo phụ vụ và hoạt động mới nhất của
+          Giáo Xứ Hòa Giang
+        </p>
+      </div>
 
-    <!-- THANH TÌM KIẾM VÀ CÁC NÚT BỘ LỌC KẾT HỢP -->
-    <div class="news-filter-wrapper" style="
+      <!-- THANH TÌM KIẾM VÀ CÁC NÚT BỘ LỌC KẾT HỢP -->
+      <div
+        class="news-filter-wrapper"
+        style="
           margin: 0 auto 35px auto;
           width: 100%;
           max-width: 100%;
           position: relative;
           padding: 0;
           text-align: center;
-        ">
-      <!-- Ô tìm kiếm thông minh (Trải dài 100% chiều ngang) -->
-      <div style="position: relative; margin-bottom: 18px; width: 70%">
-        <input type="text" id="search-input" placeholder="Nhập tên bài đăng để tìm kiếm ..." autocomplete="off" style="
+        "
+      >
+        <!-- Ô tìm kiếm thông minh (Trải dài 100% chiều ngang) -->
+        <div style="position: relative; margin-bottom: 18px; width: 70%">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Nhập tên bài đăng để tìm kiếm ..."
+            autocomplete="off"
+            style="
               width: 100%;
               padding: 16px 20px 16px 50px;
               border: 2px solid #e2e8f0;
@@ -82,10 +131,13 @@
               background-repeat: no-repeat;
               background-position: 20px center;
               box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-            " />
+            "
+          />
 
-        <!-- Hộp hiển thị danh sách đề xuất khi gõ -->
-        <div id="search-suggestions" style="
+          <!-- Hộp hiển thị danh sách đề xuất khi gõ -->
+          <div
+            id="search-suggestions"
+            style="
               display: none;
               position: absolute;
               top: calc(100% - 5px);
@@ -99,11 +151,14 @@
               max-height: 250px;
               overflow-y: auto;
               text-align: left;
-            "></div>
-      </div>
+            "
+          ></div>
+        </div>
 
-      <!-- Các nút bấm bộ lọc danh mục -->
-      <div id="filter-container" style="
+        <!-- Các nút bấm bộ lọc danh mục -->
+        <div
+          id="filter-container"
+          style="
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
@@ -111,957 +166,1356 @@
             overflow-x: auto;
             padding-bottom: 8px;
             scrollbar-width: thin;
-          ">
-        <button class="filter-btn active" data-filter="all">Tất cả</button>
-        <button class="filter-btn" data-filter="phung-vu">Phụng Vụ</button>
-        <button class="filter-btn" data-filter="sinh-hoat">Sinh Hoạt</button>
-        <button class="filter-btn" data-filter="xu-doan">Xứ Đoàn</button>
-        <button class="filter-btn" data-filter="thieu-nhi">Thiếu Nhi</button>
-        <button class="filter-btn" data-filter="thien-nguyen">
-          Thiện Nguyện
-        </button>
-        <button class="filter-btn" data-filter="bac-ai">Bác Ái</button>
-        <button class="filter-btn" data-filter="thong-bao">Thông Báo</button>
+          "
+        >
+          <button class="filter-btn active" data-filter="all">Tất cả</button>
+          <button class="filter-btn" data-filter="phung-vu">Phụng Vụ</button>
+          <button class="filter-btn" data-filter="sinh-hoat">Sinh Hoạt</button>
+          <button class="filter-btn" data-filter="xu-doan">Xứ Đoàn</button>
+          <button class="filter-btn" data-filter="thieu-nhi">Thiếu Nhi</button>
+          <button class="filter-btn" data-filter="thien-nguyen">
+            Thiện Nguyện
+          </button>
+          <button class="filter-btn" data-filter="bac-ai">Bác Ái</button>
+          <button class="filter-btn" data-filter="thong-bao">Thông Báo</button>
+        </div>
       </div>
-    </div>
 
-    <!-- Lưới bài viết -->
-    <div class="news-grid">
-      <!-- BÀI 48: Thánh Lễ Bổn Mạng Khu 1 – Đức Maria Nữ Vương 2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="thanh-le-bon-mang-khu-1-2026.html">
-          <img src="/img/bon_mang_khu_1.jpg" alt="Thánh Lễ Bổn Mạng Khu 1 – Đức Maria Nữ Vương" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="thanh-le-bon-mang-khu-1-2026.html" style="text-decoration: none; color: inherit">THÁNH LỄ BỔN MẠNG
-              KHU 1 – ĐỨC MARIA NỮ VƯƠNG</a>
-          </h3>
-          <p class="card-desc">
-            “Tôi đây là nữ tỳ của Chúa.” (Lc 1,26-38). Trong niềm vui mừng
-            kính Đức Maria Nữ Vương, cộng đoàn Khu 1 hân hoan dâng lên Mẹ
-            những lời kinh...
-          </p>
-          <p class="card-date">21/08/2026</p>
-          <a href="thanh-le-bon-mang-khu-1-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 47: Thánh Lễ Rước Lễ Lần Đầu – Mừng Kính Đức Mẹ Hồn Xác Lên Trời 2026 -->
-      <article class="card" data-category="tin-tuc">
-        <a href="thanh-le-ruoc-le-lan-dau-2026.html">
-          <img src="/img/thanh_le_ruoc_le_lan_dau_2026.jpg"
-            alt="Thánh Lễ Rước Lễ Lần Đầu – Mừng Kính Đức Mẹ Hồn Xác Lên Trời" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Tin Tức</span>
-          <h3 class="card-title">
-            <a href="thanh-le-ruoc-le-lan-dau-2026.html" style="text-decoration: none; color: inherit">THÁNH LỄ RƯỚC LỄ
-              LẦN ĐẦU – MỪNG KÍNH ĐỨC MẸ HỒN XÁC LÊN TRỜI</a>
-          </h3>
-          <p class="card-desc">
-            Trong niềm vui mừng kính Đức Maria Hồn Xác Lên Trời, 16 em thiếu
-            nhi Giáo xứ Hòa Giang hân hoan bước đến bàn tiệc Thánh Thể...
-          </p>
-          <p class="card-date">15/08/2026</p>
-          <a href="thanh-le-ruoc-le-lan-dau-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 46: Dọn Lòng - Tập Nghi Thức 2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="don-long-tap-nghi-thuc-2026.html">
-          <img src="/img/tap_nghi_thuc_2026.jpg" alt="Dọn Lòng - Tập Nghi Thức 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="don-long-tap-nghi-thuc-2026.html" style="text-decoration: none; color: inherit">DỌN LÒNG – TẬP NGHI
-              THỨC</a>
-          </h3>
-          <p class="card-desc">
-            Một buổi tối cùng nhau dọn lòng, tập nghi thức và chuẩn bị thật
-            sốt sắng, để sẵn sàng đón Chúa vào lòng trong ngày mai.
-          </p>
-          <p class="card-date">14/08/2026</p>
-          <a href="don-long-tap-nghi-thuc-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 45: Thánh Lễ Rước Lễ Lần Đầu 2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="ruoc-le-lan-dau-2026.html">
-          <img src="img/ruoc_le_lan_dau_2026.jpg" alt="Thánh Lễ Rước Lễ Lần Đầu 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="ruoc-le-lan-dau-2026.html" style="text-decoration: none; color: inherit">Thánh Lễ Rước Lễ Lần
-              Đầu</a>
-          </h3>
-          <p class="card-desc">
-            Một ngày hồng phúc khi các em nhỏ lần đầu tiên được đón Chúa Giêsu
-            Thánh Thể vào tâm hồn. Kính mời cộng đoàn cùng hiệp thông cầu
-            nguyện và chung vui trong ngày đặc biệt này.
-          </p>
-          <p class="card-date">15/08/2026</p>
-          <a href="ruoc-le-lan-dau-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 44: Khám Bệnh – Cấp Phát Thuốc Miễn Phí 2026 -->
-      <article class="card" data-category="hoat-dong">
-        <a href="kham-benh-cap-thuoc-mien-phi-2026.html">
-          <img src="img/cap_thuoc_mien_phi.jpg" alt="Khám Bệnh – Cấp Phát Thuốc Miễn Phí 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">BÁC ÁI</span>
-          <h3 class="card-title">
-            <a href="kham-benh-cap-thuoc-mien-phi-2026.html" style="text-decoration: none; color: inherit">Khám Bệnh –
-              Cấp Phát Thuốc Miễn Phí Dành Cho Bà Con</a>
-          </h3>
-          <p class="card-desc">
-            Giáo xứ Hòa Giang chào đón đoàn y, bác sĩ và nhân viên y tế đến
-            thăm khám, tư vấn sức khỏe và cấp phát thuốc miễn phí cho người có
-            hoàn cảnh khó khăn.
-          </p>
-          <p class="card-date">01/08/2026</p>
-          <a href="kham-benh-cap-thuoc-mien-phi-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 43: Ơn Đại Xá Portiuncula 2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="on-dai-xa-portiuncula-2026.html">
-          <img src="./img/on_dai_xa.jpg" alt="Ơn Đại Xá Portiuncula 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="on-dai-xa-portiuncula-2026.html" style="text-decoration: none; color: inherit">ƠN ĐẠI XÁ
-              PORTIUNCULA [Trưa 01/08 - Đêm 02/08]</a>
-          </h3>
-          <p class="card-desc">
-            Ơn Đại Xá Portiuncula là Ơn mà Thánh Phanxicô thành Assisi đã xin
-            Chúa Giêsu ban cho các tín hữu. Cùng tìm hiểu nguồn gốc và các
-            điều kiện để lãnh nhận ơn đại xá.
-          </p>
-          <p class="card-date">31/07/2026</p>
-          <a href="on-dai-xa-portiuncula-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 42: Tổng Kết Trại Hè "Mầm Xanh Tin Yêu" 2026 -->
-      <article class="card" data-category="xu-doan">
-        <a href="ket-thuc-trai-he-2026.html">
-          <img src="./img/ket_thuc_trai_he_2026.jpg" alt="Tổng Kết Trại Hè Mầm Xanh Tin Yêu 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">THIẾU NHI</span>
-          <h3 class="card-title">
-            <a href="ket-thuc-trai-he-2026.html" style="text-decoration: none; color: inherit">Khép Lại Trại Hè "Mầm
-              Xanh Tin Yêu" 2026</a>
-          </h3>
-          <p class="card-desc">
-            Khép lại Trại hè "Mầm Xanh Tin Yêu", điều còn đọng lại không chỉ
-            là những khoảnh khắc đẹp mà còn là biết bao tình thương và sự hy
-            sinh âm thầm.
-          </p>
-          <p class="card-date">27/07/2026</p>
-          <a href="ket-thuc-trai-he-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 41: Cơm Chiều Và Lửa Trại 2026 -->
-      <article class="card" data-category="xu-doan">
-        <a href="com-chieu-va-lua-trai-2026.html">
-          <img src="./img/com_chieu_va_lua_trai_2026.jpg" alt="Cơm Chiều Và Lửa Trại - Trại Hè 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">THIẾU NHI</span>
-          <h3 class="card-title">
-            <a href="com-chieu-va-lua-trai-2026.html" style="text-decoration: none; color: inherit">Cơm Chiều Và Lửa
-              Trại</a>
-          </h3>
-          <p class="card-desc">
-            Bữa cơm chiều ấm áp và đêm lửa trại bùng cháy ngọn lửa hiệp nhất,
-            nối kết tình huynh đệ trong ngày hội trại hè 2026.
-          </p>
-          <p class="card-date">27/07/2026</p>
-          <a href="com-chieu-va-lua-trai-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 40: Trò Chơi Lớn Trại Hè 2026 -->
-      <article class="card" data-category="xu-doan">
-        <a href="tro-choi-lon-2026.html">
-          <img src="./img/tro_choi_lon.jpg" alt="Trò Chơi Lớn - Trại Hè 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">THIẾU NHI</span>
-          <h3 class="card-title">
-            <a href="tro-choi-lon-2026.html" style="text-decoration: none; color: inherit">Trò Chơi Lớn</a>
-          </h3>
-          <p class="card-desc">
-            Hành trình vượt thử thách đầy gay cấn, sôi nổi và gắn kết trong
-            chương trình Trò Chơi Lớn của trại hè 2026.
-          </p>
-          <p class="card-date">26/07/2026</p>
-          <a href="tro-choi-lon-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 39: Chấm Bảng Trại Và Cơm Trưa 2026 -->
-      <article class="card" data-category="xu-doan">
-        <a href="cham-bang-trai-2026.html">
-          <img src="./img/cham_ban_trai_2026.jpg" alt="Chấm Bảng Trại Và Cơm Trưa - Trại Hè 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">THIẾU NHI</span>
-          <h3 class="card-title">
-            <a href="cham-bang-trai-2026.html" style="text-decoration: none; color: inherit">Chấm Bảng Trại Và Cơm
-              Trưa</a>
-          </h3>
-          <p class="card-desc">
-            Hoạt động chấm điểm bảng trại và quây quần bên bữa cơm trưa ấm
-            cúng trong ngày hội trại hè 2026.
-          </p>
-          <p class="card-date">26/07/2026</p>
-          <a href="cham-bang-trai-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 38: Trò Chơi Sinh Hoạt & Đố Vui Kinh Thánh 2026 -->
-      <article class="card" data-category="xu-doan">
-        <a href="tro-choi-sh-do-vui-tk-2026.html">
-          <img src="./img/tro_choi_sh_do_vui_tk_2026.jpg" alt="Trò Chơi Sinh Hoạt & Đố Vui Kinh Thánh Trại Hè 2026"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">THIẾU NHI</span>
-          <h3 class="card-title">
-            <a href="tro-choi-sh-do-vui-tk-2026.html" style="text-decoration: none; color: inherit">Trò Chơi Sinh Hoạt &
-              Đố Vui Kinh Thánh</a>
-          </h3>
-          <p class="card-desc">
-            Những tiếng cười giòn tan, những màn tranh tài sôi nổi và những
-            câu hỏi Kinh Thánh ý nghĩa đã làm nên một bầu khí tràn đầy niềm
-            vui.
-          </p>
-          <p class="card-date">26/07/2026</p>
-          <a href="tro-choi-sh-do-vui-tk-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 37: Thánh Lễ - Ăn Sáng - Nghi Thức Chào Cờ Trại Hè 2026 -->
-      <article class="card" data-category="xu-doan">
-        <a href="thanh-le-chao-co-chuan-bi-nhap-trai-2026.html">
-          <img src="./img/thanh_le_chao_co_chuan_bi_nhap_trai_2026.jpg"
-            alt="Thánh Lễ - Ăn Sáng - Nghi Thức Chào Cờ Trại Hè 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">PHUNG VU</span>
-          <h3 class="card-title">
-            <a href="thanh-le-chao-co-chuan-bi-nhap-trai-2026.html" style="text-decoration: none; color: inherit">Thánh
-              Lễ - Ăn Sáng - Nghi Thức Chào Cờ Trại Hè 2026</a>
-          </h3>
-          <p class="card-desc">
-            Một ngày trại hè bắt đầu bằng Thánh lễ sốt sắng, bữa sáng ấm áp và
-            nghi thức Chào cờ đầy trang nghiêm mở đầu hành trình "Mầm Xanh Tin
-            Yêu".
-          </p>
-          <p class="card-date">25/07/2026</p>
-          <a href="thanh-le-chao-co-chuan-bi-nhap-trai-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 36: Tĩnh Tâm Chuẩn Bị Mừng Bổn Mạng Hội Đồng Mục Vụ Giáo Xứ Hòa Giang 2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="mung-bon-mang-2026.html">
-          <img src="./img/mung_bon_mang_2026.jpg" alt="Tĩnh Tâm Chuẩn Bị Mừng Bổn Mạng HĐMV Giáo Xứ Hòa Giang 2026"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">PHUNG VU</span>
-          <h3 class="card-title">
-            <a href="mung-bon-mang-2026.html" style="text-decoration: none; color: inherit">Tĩnh Tâm Chuẩn Bị Mừng Bổn
-              Mạng Hội Đồng Mục Vụ Giáo Xứ Hòa
-              Giang</a>
-          </h3>
-          <p class="card-desc">
-            Quý thành viên Hội đồng Mục vụ Giáo xứ Hòa Giang đã cùng quy tụ
-            tham dự giờ tĩnh tâm để chuẩn bị tâm hồn mừng kính hai Thánh Bổn
-            mạng.
-          </p>
-          <p class="card-date">24/07/2026</p>
-          <a href="mung-bon-mang-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 35: Nhá hàng trại hè 2026 - Mầm Xanh Tin Yêu -->
-      <article class="card" data-category="xu-doan">
-        <a href="ki-niem-trai-he-2026.html">
-          <img src="./img/ki_niem_trai_he_2026.jpg" alt="Ký Ức Trại Hè 2026 - Mầm Xanh Tin Yêu" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">THIẾU NHI</span>
-          <h3 class="card-title">
-            <a href="ki-niem-trai-he-2026.html" style="text-decoration: none; color: inherit">Mùa Hè Này, Chúng Mình Đã
-              Cùng Nhau Viết Nên Những Ký Ức Đẹp
-              Nhất!</a>
-          </h3>
-          <p class="card-desc">
-            "Nhá hàng" trước vài khoảnh khắc của Trại hè 2026. Album đầy đủ
-            đang trên đường đến!
-          </p>
-          <p class="card-date">23/07/2026</p>
-          <a href="ki-niem-trai-he-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 34: Thánh Lễ Rước Lễ Trọng Thể 2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="thanh-le-rltt-2026.html">
-          <img src="./img/thanh_le_rltt_2026.jpg" alt="Thánh Lễ Rước Lễ Trọng Thể 2026 - Giáo Xứ Hòa Giang"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">PHỤNG VỤ</span>
-          <h3 class="card-title">
-            <a href="thanh-le-rltt-2026.html" style="text-decoration: none; color: inherit">Thánh Lễ Rước Lễ Trọng Thể
-              Dành Cho Các Em Thiếu Nhi 2026</a>
-          </h3>
-          <p class="card-desc">
-            Trong bầu khí trang nghiêm và sốt sắng, Thánh lễ Rước Lễ Trọng Thể
-            đã diễn ra, ghi dấu một cột mốc ý nghĩa trong hành trình đức tin
-            của các em thiếu nhi.
-          </p>
-          <p class="card-date">19/07/2026</p>
-          <a href="thanh-le-rltt-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 33: Tri Ân Và Chia Tay Quý Thầy Tiền Chủng Viện Têrêsa 2026 -->
-      <article class="card" data-category="xu-doan">
-        <a href="chia-tay-cac-thay-2026.html">
-          <img src="./img/chia_tay_cac_thay_2026.jpg" alt="Tri Ân Và Chia Tay Quý Thầy Tiền Chủng Viện Têrêsa"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Xứ Đoàn</span>
-          <h3 class="card-title">
-            <a href="chia-tay-cac-thay-2026.html" style="text-decoration: none; color: inherit">Tri Ân Quý Thầy Tiền
-              Chủng Viện Têrêsa Sau 1 Tháng Đồng Hành</a>
-          </h3>
-          <p class="card-desc">
-            Khép lại một tháng đồng hành cùng Giáo xứ, xin chân thành cảm ơn
-            Thầy và hai chú đã tận tâm dạy đàn, tập hát, đồng hành cùng thiếu
-            nhi và chuẩn bị Trại hè.
-          </p>
-          <p class="card-date">18/07/2026</p>
-          <a href="chia-tay-cac-thay-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 32: Phút Hồi Tâm - Lớp Bao Đồng 2026 -->
-      <article class="card" data-category="xu-doan">
-        <a href="phut-hoi-tam-2026.html">
-          <img src="./img/phut_hoi_tam_2026.jpg" alt="Phút Hồi Tâm - Lớp Bao Đồng Giáo Xứ Hòa Giang" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">PHỤNG VỤ</span>
-          <h3 class="card-title">
-            <a href="phut-hoi-tam-2026.html" style="text-decoration: none; color: inherit">Phút Hồi Tâm - Lớp Bao
-              Đồng</a>
-          </h3>
-          <p class="card-desc">
-            Trong bầu khí thinh lặng và linh thiêng, các em thiếu nhi đã có
-            những giây phút lắng đọng để nhìn lại bản thân, suy ngẫm về tình
-            yêu và sự hy sinh của ba mẹ.
-          </p>
-          <p class="card-date">17/07/2026</p>
-          <a href="phut-hoi-tam-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 31: Thánh Lễ Rước Lễ Trọng Thể & Tuyên Hứa 2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="tuyen-hua-bao-dong-2026.html">
-          <img src="./img/tuyen_hua_bao_dong_2026.jpg" alt="Thánh Lễ Rước Lễ Trọng Thể - Giáo Xứ Hòa Giang"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="tuyen-hua-bao-dong-2026.html" style="text-decoration: none; color: inherit">Thánh Lễ Rước Lễ Trọng
-              Thể Dành Cho Các Em Thiếu Nhi 2026</a>
-          </h3>
-          <p class="card-desc">
-            Kính mời quý cộng đoàn hiệp ý cầu nguyện và tham dự Thánh Lễ Rước
-            Lễ Trọng Thể cho các em thiếu nhi vào lúc 07g30, Chúa Nhật
-            19/07/2026.
-          </p>
-          <p class="card-date">16/07/2026</p>
-          <a href="tuyen-hua-bao-dong-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 30: Xin Giới Thiệu Những Chiến Binh Của "Mầm Xanh Tin Yêu"! -->
-      <article class="card" data-category="xu-doan">
-        <a href="chien-binh-2026.html">
-          <img src="./img/chien_binh_2026.jpg" alt="Những Chiến Binh Của Mầm Xanh Tin Yêu – Trại Hè 2026"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Xứ Đoàn</span>
-          <h3 class="card-title">
-            <a href="chien-binh-2026.html" style="text-decoration: none; color: inherit">Xin Giới Thiệu Những Chiến Binh
-              Của "Mầm Xanh Tin Yêu"!</a>
-          </h3>
-          <p class="card-desc">
-            Mỗi đội một màu sắc, một cá tính, nhưng cùng chung một mục tiêu:
-            Chơi hết mình – Gắn kết hết sức – Lưu giữ thật nhiều kỷ niệm!
-          </p>
-          <p class="card-date">13/07/2026</p>
-          <a href="chien-binh-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 29: Sân Khấu Đã Sẵn Sàng - Trại Hè 2026 -->
-      <article class="card" data-category="xu-doan">
-        <a href="san-khau-san-sang-2026.html">
-          <img src="./img/san_khau_san_sang_2026.jpg" alt="Sân Khấu Đã Sẵn Sàng – Trại Hè 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Xứ Đoàn</span>
-          <h3 class="card-title">
-            <a href="san-khau-san-sang-2026.html" style="text-decoration: none; color: inherit">Sân Khấu Đã Sẵn Sàng –
-              Hẹn Gặp Nhau Tại "Mầm Xanh Tin Yêu"!</a>
-          </h3>
-          <p class="card-desc">
-            Sân khấu, trò chơi và tất cả mọi người đã sẵn sàng cho ngày hội
-            lớn 23.07.2026. Cùng đếm ngược cho Trại Hè 2026!
-          </p>
-          <p class="card-date">12/07/2026</p>
-          <a href="san-khau-san-sang-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 28: Không Khí Trại Hè 2026 – "Mầm Xanh Tin Yêu" -->
-      <article class="card" data-category="xu-doan">
-        <a href="khong-khi-trai-he-2026.html">
-          <img src="./img/khong_khi_trai_he_2026.jpg" alt="Không Khí Trại Hè 2026 – Mầm Xanh Tin Yêu"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Xứ Đoàn</span>
-          <h3 class="card-title">
-            <a href="khong-khi-trai-he-2026.html" style="text-decoration: none; color: inherit">Không Khí Trại Hè 2026 –
-              "Mầm Xanh Tin Yêu" Đang Nóng Dần
-              Lên!</a>
-          </h3>
-          <p class="card-desc">
-            Quý thầy cùng các anh chị Huynh trưởng đang miệt mài, tất bật
-            "test game", từng hoạt động và từng điều bất ngờ cho mùa hè "Mầm
-            Xanh Tin Yêu".
-          </p>
-          <p class="card-date">11/07/2026</p>
-          <a href="khong-khi-trai-he-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 27: Giáo Phận Long Xuyên - Bổ Nhiệm và Thuyên Chuyển Linh Mục tháng 07/2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="bo-nhiem-lmuc-2026.html">
-          <img src="./img/bo_nhiem_lmuc_2026.jpg"
-            alt="Giáo Phận Long Xuyên - Bổ Nhiệm và Thuyên Chuyển Linh Mục tháng 07/2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="bo-nhiem-lmuc-2026.html" style="text-decoration: none; color: inherit">Giáo Phận Long Xuyên - Bổ
-              Nhiệm và Thuyên Chuyển Linh Mục tháng
-              07/2026</a>
-          </h3>
-          <p class="card-desc">
-            Thông tin về quyết định bổ nhiệm và thuyên chuyển quý cha trong
-            Giáo phận Long Xuyên tháng 07/2026.
-          </p>
-          <p class="card-date">01/07/2026</p>
-          <a href="bo-nhiem-lmuc-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 26: Thánh Lễ Tạ Ơn – 09 Năm Hồng Ân Linh Mục -->
-      <article class="card" data-category="thong-bao">
-        <a href="9-nam-hong-an-lmuc.html">
-          <img src="./img/9_nam_hong_an_lmuc.jpg" alt="Thánh Lễ Tạ Ơn – 09 Năm Hồng Ân Linh Mục" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">PHỤNG VỤ</span>
-          <h3 class="card-title">
-            <a href="9-nam-hong-an-lmuc.html" style="text-decoration: none; color: inherit">Thánh Lễ Tạ Ơn – 09 Năm Hồng
-              Ân Linh Mục</a>
-          </h3>
-          <p class="card-desc">
-            Cộng đoàn Giáo xứ Hòa Giang hiệp dâng Thánh lễ mừng 09 năm Hồng ân
-            Linh mục của Cha sở Phanxicô Xaviê và Cha giáo Giuse.
-          </p>
-          <p class="card-date">30/06/2026</p>
-          <a href="9-nam-hong-an-lmuc.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 25: Mừng Bổn Mạng Giáo Khu 2A – Thánh Phê-rô -->
-      <article class="card" data-category="thong-bao">
-        <a href="bon-mang-gk-2a.html">
-          <img src="./img/bon_mang_gk_2a.jpg" alt="Mừng Bổn Mạng Giáo Khu 2A - Thánh Phê-rô" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">PHỤNG VỤ</span>
-          <h3 class="card-title">
-            <a href="bon-mang-gk-2a.html" style="text-decoration: none; color: inherit">Mừng Bổn Mạng Giáo Khu 2A –
-              Thánh Phê-rô</a>
-          </h3>
-          <p class="card-desc">
-            Trong bầu khí trang nghiêm và sốt sắng, Giáo khu 2A – Giáo xứ Hòa
-            Giang đã hân hoan cử hành Thánh lễ mừng kính Thánh quan thầy
-            Phê-rô.
-          </p>
-          <p class="card-date">29/06/2026</p>
-          <a href="bon-mang-gk-2a.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 24: Trại Hè "Mầm Xanh Tình Yêu" 2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="mam-xanh-tin-yeu.html">
-          <img src="./img/mam_xanh_tin_yeu.jpg" alt="Trại Hè Mầm Xanh Tình Yêu 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">THIẾU NHI</span>
-          <h3 class="card-title">
-            <a href="mam-xanh-tin-yeu.html" style="text-decoration: none; color: inherit">Trại Hè "Mầm Xanh Tình Yêu"
-              2026</a>
-          </h3>
-          <p class="card-desc">
-            Các trại sinh đã sẵn sàng vui chơi, chinh phục thử thách tại Đức
-            Mẹ Núi Trầu và lớn lên trong Đức Tin chưa?
-          </p>
-          <p class="card-date">27/06/2026</p>
-          <a href="mam-xanh-tin-yeu.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 23: Thánh Lễ Tạ Ân Hồng Ân Linh Mục -->
-      <article class="card" data-category="thong-bao">
-        <a href="thanh_le_ta_on_lmuc.html">
-          <img src="./img/thanh_le_ta_on_lmuc.jpg" alt="Thánh Lễ Tạ Ân Hồng Ân Linh Mục" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">PHỤNG VỤ</span>
-          <h3 class="card-title">
-            <a href="thanh_le_ta_on_lmuc.html" style="text-decoration: none; color: inherit">Thánh Lễ Tạ Ân Hồng Ân Linh
-              Mục</a>
-          </h3>
-          <p class="card-desc">
-            Cộng đoàn Giáo xứ Hòa Giang hân hoan mừng Kỷ niệm 09 năm Hồng ân
-            Linh mục của Cha sở Phanxicô Xaviê Trịnh Quốc Đạt.
-          </p>
-          <p class="card-date">25/06/2026</p>
-          <a href="thanh_le_ta_on_lmuc.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 22: Lần Chuỗi Mân Côi Và Sinh Hoạt Vòng Tròn -->
-      <article class="card" data-category="thong-bao">
-        <a href="lan-chuoi-man-coi.html">
-          <img src="./img/lan_chuoi_man_coi.jpg" alt="Lần Chuỗi Mân Côi Và Sinh Hoạt Vòng Tròn" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">PHỤNG VỤ</span>
-          <h3 class="card-title">
-            <a href="lan-chuoi-man-coi.html" style="text-decoration: none; color: inherit">Lần Chuỗi Mân Côi Và Sinh
-              Hoạt Vòng Tròn</a>
-          </h3>
-          <p class="card-desc">
-            Các bạn thiếu nhi sốt sắng lần chuỗi Mân Côi dâng kính Đức Mẹ và
-            tham gia sinh hoạt vòng tròn, vui chơi gắn kết đầy ý nghĩa.
-          </p>
-          <p class="card-date">24/06/2026</p>
-          <a href="lan-chuoi-man-coi.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 21: Thánh Lễ Ban Bí Tích Thêm Sức -->
-      <article class="card" data-category="thong-bao">
-        <a href="them-suc-2026.html">
-          <img src="./img/them_suc_2026.jpg" alt="Thánh Lễ Ban Bí Tích Thêm Sức" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">PHỤNG VỤ</span>
-          <h3 class="card-title">
-            <a href="them-suc-2026.html" style="text-decoration: none; color: inherit">Thánh Lễ Ban Bí Tích Thêm Sức</a>
-          </h3>
-          <p class="card-desc">
-            Thánh Lễ Ban Bí Tích Thêm Sức do Đức Cha Giuse Trần Văn Toản chủ
-            sự vào lúc 09h30 ngày 14/06/2026.
-          </p>
-          <p class="card-date">11/06/2026</p>
-          <a href="them-suc-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 20: Chương Trình Kinh Lý Mục Vụ & Thánh Lễ Ban Bí Tích Thêm Sức -->
-      <article class="card" data-category="thong-bao">
-        <a href="chuong-trinh-kinh-ly-2026.html">
-          <img src="img/chuong_trinh_kinh_ly_2026.jpg" alt="Chương Trình Kinh Lý Mục Vụ & Thánh Lễ Ban Bí Tích Thêm Sức"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="truong-trinh-kinh-ly-2026.html" style="text-decoration: none; color: inherit">Chương Trình Kinh Lý
-              Mục Vụ & Thánh Lễ Ban Bí Tích Thêm Sức</a>
-          </h3>
-          <p class="card-desc">
-            Giáo xứ Hòa Giang hân hoan chào đón chương trình Kinh Lý Mục Vụ và
-            Thánh Lễ Ban Bí Tích Thêm Sức do Giáo phận Long Xuyên cử hành.
-          </p>
-          <p class="card-date">08/06/2026</p>
-          <a href="chuong-trinh-kinh-ly-2026" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 19: Thánh Lễ Tổng Kết Năm Học Giáo Lý 2025-2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="tong-ket-nam-hoc.html">
-          <img src="./img/tong_ket_2025_2026.jpg" alt="Thánh Lễ Tổng Kết Năm Học Giáo Lý 2025-2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">THIẾU NHI</span>
-          <h3 class="card-title">
-            <a href="tong-ket-nam-hoc.html" style="text-decoration: none; color: inherit">Thánh Lễ Tổng Kết Năm Học Giáo
-              Lý 2025-2026</a>
-          </h3>
-          <p class="card-desc">
-            Cộng đoàn giáo xứ long trọng cử hành Thánh lễ tổng kết năm học
-            giáo lý 2025-2026, tạ ơn Chúa vì một năm học nhiều hồng ân.
-          </p>
-          <p class="card-date">31/05/2026</p>
-          <a href="tong-ket-nam-hoc.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 18: Bế Mạc Tháng Hoa -->
-      <article class="card" data-category="thong-bao">
-        <a href="be-mac-dang-hoa.html">
-          <img src="./img/be_mac_dang_hoa_2026.jpg" alt="Bế Mạc Tháng Hoa" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Phụng Vụ</span>
-          <h3 class="card-title">
-            <a href="be-mac-dang-hoa.html" style="text-decoration: none; color: inherit">Bế Mạc Tháng Hoa</a>
-          </h3>
-          <p class="card-desc">
-            Cộng đoàn giáo xứ long trọng cử hành thánh lễ và nghi thức bế mạc
-            tháng kính Đức Mẹ, dâng lên Mẹ những tâm tình thành kính.
-          </p>
-          <p class="card-date">31/05/2026</p>
-          <a href="be-mac-dang-hoa.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 17: Rao Báo Truyền Chức Phó Tế & Linh Mục - Giáo Phận Long Xuyên 06/2026 -->
-      <article class="card" data-category="thong-bao">
-        <a href="rao-bao-truyen-chuc.html">
-          <img src="./img/truyen_truc_pho_te_2026.jpg"
-            alt="Rao Báo Truyền Chức Phó Tế & Linh Mục - Giáo Phận Long Xuyên 06/2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="rao-bao-truyen-chuc.html" style="text-decoration: none; color: inherit">Rao Báo Truyền Chức Phó Tế
-              & Linh Mục - Giáo Phận Long Xuyên
-              06/2026</a>
-          </h3>
-          <p class="card-desc">
-            Xin cộng đoàn tiếp tục cầu nguyện cho quý Thầy, đặc biệt là Thầy
-            Phê-rô Nguyễn Chí Thanh từng phục vụ tại Giáo xứ chúng ta.
-          </p>
-          <p class="card-date">28/05/2026</p>
-          <a href="rao-bao-truyen-chuc.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 16: Hành Hương Đức Mẹ Núi Trầu -->
-      <article class="card" data-category="thong-bao">
-        <a href="hanh-huong-duc-me.html">
-          <img src="./img/hanh_huong_2026.jpg" alt="Hành Hương Đức Mẹ Núi Trầu" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Phụng Vụ</span>
-          <h3 class="card-title">
-            <a href="hanh-huong-duc-me.html" style="text-decoration: none; color: inherit">Hành Hương Đức Mẹ Núi
-              Trầu</a>
-          </h3>
-          <p class="card-desc">
-            Cộng đoàn giáo xứ tham gia chuyến hành hương kính Đức Mẹ tại trung
-            tâm Núi Trầu, sốt sắng dâng lời kinh nguyện và phó thác gia đình.
-          </p>
-          <p class="card-date">01/05/2026</p>
-          <a href="hanh-huong-duc-me.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 15: Chúa Nhật Tuần IV Phục Sinh - Ngày cầu cho ơn thiên triệu -->
-      <article class="card" data-category="thong-bao">
-        <a href="cn4-phuc-sinh.html">
-          <img src="./img/cn4_phuc_sinh_2026.jpg" alt="Chúa Nhật Tuần IV Phục Sinh - Ngày cầu cho ơn thiên triệu"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Phụng Vụ</span>
-          <h3 class="card-title">
-            <a href="cn4-phuc-sinh.html" style="text-decoration: none; color: inherit">Chúa Nhật Tuần IV Phục Sinh -
-              Ngày cầu cho ơn thiên triệu</a>
-          </h3>
-          <p class="card-desc">
-            Cộng đoàn giáo xứ hiệp ý cầu nguyện cho ơn thiên triệu, mừng kính
-            Chúa Giê-su - Mục Tử Nhân Lành luôn dẫn dắt và quan phòng đoàn
-            chiên.
-          </p>
-          <p class="card-date">26/04/2026</p>
-          <a href="cn4-phuc-sinh.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 14: Thứ Bảy Tuần Thánh - Vọng Phục Sinh -->
-      <article class="card" data-category="thong-bao">
-        <a href="vong-phuc-sinh-2026.html">
-          <img src="./img/vong_phuc_sinh_2026.jpg" alt="Thứ Bảy Tuần Thánh - Vọng Phục Sinh" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Phụng Vụ</span>
-          <h3 class="card-title">
-            <a href="vong-phuc-sinh-2026.html" style="text-decoration: none; color: inherit">Thứ Bảy Tuần Thánh - Vọng
-              Phục Sinh</a>
-          </h3>
-          <p class="card-desc">
-            Cộng đoàn giáo xứ long trọng cử hành Đêm Canh Thức Vượt Qua - Vọng
-            Phục Sinh, mừng Chúa Giê-su Kitô đã khải hoàn chiến thắng tử thần.
-          </p>
-          <p class="card-date">05/04/2026</p>
-          <a href="vong-phuc-sinh-2026.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 13: Thứ Sáu Tuần Thánh -->
-      <article class="card" data-category="thong-bao">
-        <a href="thu-sau-tuan-thanh.html">
-          <img src="./img/thu_sau_tuan_thanh_2026.jpg"
-            alt="Thứ Sáu Tuần Thánh - Tưởng Niệm Cuộc Thương Khó Của Chúa Giê-su" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Phụng Vụ</span>
-          <h3 class="card-title">
-            <a href="thu-sau-tuan-thanh.html" style="text-decoration: none; color: inherit">Thứ Sáu Tuần Thánh - Tưởng
-              Niệm Cuộc Thương Khó Của Chúa
-              Giê-su</a>
-          </h3>
-          <p class="card-desc">
-            Cùng cộng đoàn hiệp thông tưởng niệm cuộc thương khó và cái chết
-            trên thập giá của Chúa Giê-su Kitô trong ngày Thứ Sáu Tuần Thánh.
-          </p>
-          <p class="card-date">03/04/2026</p>
-          <a href="thu-sau-tuan-thanh.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 12: Cáo Phó Đức Hồng Y -->
-      <article class="card" data-category="thong-bao">
-        <a href="cao-pho-duc-hong-y.html">
-          <img src="./img/cao_pho_duc_hong_y.jpg" alt="Cáo Phó Đức Cố Hồng Y Gioan Baotixita Phạm Minh Mẫn"
-            class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="cao-pho-duc-hong-y.html" style="text-decoration: none; color: inherit">Cáo Phó: Đức Cố Hồng Y Gioan
-              Baotixita Phạm Minh Mẫn Về Nhà
-              Cha</a>
-          </h3>
-          <p class="card-desc">
-            Trong niềm tin vào Chúa Kitô Phục Sinh, Tổng Giáo phận Sài Gòn -
-            TP.HCM trân trọng kính báo Đức Cố Hồng Y đã an nghỉ trong Chúa.
-          </p>
-          <p class="card-date">23/03/2026</p>
-          <a href="cao-pho-duc-hong-y.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 11: Tuần Thánh -->
-      <article class="card" data-category="phung-vu">
-        <a href="tuan-thanh-2026.html">
-          <img src="./img/tuan_thanh_2026.jpg"
-            alt="Chương Trình Phụng Vụ Tuần Thánh Và Đại Lễ Phục Sinh - Giáo Xứ Hoa Giang 2026" class="card-img" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Phụng Vụ</span>
-          <h3 class="card-title">
-            <a href="tuan-thanh-2026.html">Chương Trình Phụng Vụ Tuần Thánh Và Đại Lễ Phục Sinh - Giáo Xứ
-              Hoa Giang 2026</a>
-          </h3>
-          <p class="card-desc">
-            Cập nhật lịch trình chi tiết các cử hành phụng vụ trong Tuần Thánh
-            và Đại Lễ Phục Sinh của cộng đoàn giáo xứ.
-          </p>
-          <span class="card-date">23/03/2026</span>
-          <a href="tuan-thanh-2026.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 10: Lễ Tro -->
-      <article class="card">
-        <a href="le_tro_2026.html">
-          <img src="./img/le_tro_2026.jpg" alt="Lễ Tro - Mở Đầu Mùa Chay Thánh" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Phụng Vụ</span>
-          <h3 class="card-title">
-            <a href="le_tro_2026.html" style="text-decoration: none; color: inherit">LỄ TRO - MỞ ĐẦU MÙA CHAY THÁNH</a>
-          </h3>
-          <p class="card-desc">
-            Hôm nay, cộng đoàn giáo xứ bước vào Ngày Lễ Tro, chính thức mở đầu
-            Mùa Chay Thánh...
-          </p>
-          <span class="card-date">20/02/2026</span>
-          <a href="le_tro_2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 9: Kết Quả Lộc Xuân 2026 -->
-      <article class="card">
-        <a href="loc-xuan-2026.html">
-          <img src="./img/loc_xuan_2026.jpg" alt="Kết Quả Lộc Xuân May Mắn - Giáo Xứ Hòa Giang 2026" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Thông Báo</span>
-          <h3 class="card-title">
-            <a href="loc-xuan-2026.html" style="text-decoration: none; color: inherit">
-              KẾT QUẢ LỘC XUÂN MAY MẮN - GIÁO XỨ HÒA GIANG
-            </a>
-          </h3>
-          <p class="card-desc">
-            Thời gian lãnh thưởng trong vòng 7 ngày, kể từ ngày quay số (Quá
-            thời gian 7 ngày, vé sẽ không còn giá trị để lãnh thưởng).
-          </p>
-          <span class="card-date">18/02/2026</span>
-          <a href="loc-xuan-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 8: Hội Chợ Xuân -->
-      <article class="card">
-        <a href="hoi-cho-xuan-2026.html">
-          <img src="./img/hoi_cho_xuan_2026.jpg" alt="Hội Chợ Xuân - Giáo Xứ Hòa Giang 2026" />
-        </a>
-        <div class="card-body">
-          <span class="tag">Sinh Hoạt</span>
-          <h3 class="card-title">
-            <a href="hoi-cho-xuan-2026.html" style="text-decoration: none; color: inherit">
-              HỘI CHỢ XUÂN - GIÁO XỨ HÒA GIANG 2026
-            </a>
-          </h3>
-          <p class="card-desc">
-            Không khí rộn ràng, vui tươi ngập tràn trong sự kiện Hội Chợ Xuân
-            2026 tại Giáo xứ Hòa Giang, gắn kết tình thân ái đầu năm.
-          </p>
-          <span class="card-date">17/02/2026</span>
-          <a href="hoi-cho-xuan-2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 7: Thiếu nhi chúc Tết -->
-      <article class="card">
-        <img src="./img/li_xi_tet_2026.jpg" alt="Thiếu nhi chúc Tết Cha Tuyên Úy" />
-        <div class="card-body">
-          <span class="tag">Thiếu Nhi</span>
-          <h3 class="card-title">
-            THIẾU NHI CHÚC TẾT CHA TUYÊN ÚY VÀ NHẬN LÌ XÌ ĐẦU NĂM
-          </h3>
-          <p class="card-desc">
-            Không khí ngày đầu năm mới thêm phần ấm áp và rộn ràng khi các em
-            thiếu nhi trong xứ đoàn tề tựu để dâng lời chúc Tết ý nghĩa lên
-            Cha Tuyên Úy và nhận những bao lì xì đầu năm...
-          </p>
-          <span class="card-date">15/02/2026</span>
-          <a href="thieu-nhi-chuc-tet.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 6: Chia sẻ quà Tết -->
-      <article class="card">
-        <img src="./img/chia_se_qua_tet.jpg" alt="Chia sẻ quà Tết Giáo Xứ Hòa Giang" />
-        <div class="card-body">
-          <span class="tag">Thiện Nguyện</span>
-          <h3 class="card-title">
-            Chia Sẻ Quà Tết Đến Các Gia Đình & Đội Thiện Nguyện
-          </h3>
-          <p class="card-desc">
-            Chị Đoàn Triều Mến và gia đình đến Giáo Xứ Hòa Giang để cùng chia
-            sẻ những phần quà Tết cho các gia đình những người lớn tuổi và các
-            thành viên trong đội thiện nguyện...
-          </p>
-          <span class="card-date">13/02/2026</span>
-          <a href="chia-se-qua-tet.html" class="card-link">Xem Chi Tiết &rarr;</a>
-        </div>
-      </article>
-      <!-- BÀI 5: Bán hoa Tết -->
-      <article class="card">
-        <img src="./img/ban_hoa_ngay_tet.jpg" alt="Bán hoa Tết Giáo Xứ Hòa Giang" />
-        <div class="card-body">
-          <span class="tag">Xứ Đoàn</span>
-          <h3 class="card-title">
-            Hoa Cúng Tết Giáo Xứ Hòa Giang - Phục Vụ Gia Đình & Đất Thánh
-          </h3>
-          <p class="card-desc">
-            Hoa Tết đã về đến sân nhà thờ! Kính mời Quý Cộng Đoàn đến xem, lựa
-            chọn hoặc đặt giao tận nhà để ủng hộ Xứ Đoàn...
-          </p>
-          <span class="card-date">09/02/2026</span>
-          <a href="ban-hoa-tet.html" class="card-link">Xem Chi Tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 4: Lịch Phụng Vụ Tết -->
-      <article class="card">
-        <img src="./img/lich_phuc_vu.jpg" alt="Lịch Phụng Vụ Tết Bính Ngọ 2026" />
-        <div class="card-body">
-          <span class="tag">Phụng Vụ</span>
-          <h3 class="card-title">
-            Lịch Phụng Vụ & Chương Trình Vui Xuân Bính Ngọ 2026
-          </h3>
-          <p class="card-desc">
-            Thông báo chi tiết lịch Lễ Tất Niên, Giao Thừa, các Thánh Lễ Tân
-            Niên và chương trình Hội Chợ Xuân...
-          </p>
-          <span class="card-date">07/02/2026</span>
-          <a href="lich-phung-vu-tet-2026.html" class="card-link">Xem chi tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 3 Phát quà từ thiện -->
-      <article class="card">
-        <img src="./img/phat_qua_tu_thien.jpg" alt="Phát quà từ thiện" />
-        <div class="card-body">
-          <span class="tag">Bác Ái</span>
-          <h3 class="card-title">
-            Kết Nối Yêu Thương: Trao 250 Phần Quà Cho Bà Con Lương Giáo
-          </h3>
-          <p class="card-desc">
-            Giáo xứ Hòa Giang kết hợp cùng đoàn từ thiện của Cha Giuse...
-          </p>
-          <span class="card-date">01/02/2026</span>
-          <a href="phat-qua-tu-thien.html" class="card-link">Xem chi tiết ➔</a>
-        </div>
-      </article>
-      <!-- BÀI 2: Bổn Mạng Giáo Xứ -->
-      <article class="card">
-        <img src="./img/bon_mang_gx.jpg" alt="Lễ Bổn Mạng Giáo Xứ Hòa Giang" />
-        <div class="card-body">
-          <span class="tag">Bổn Mạng</span>
-          <h3 class="card-title">
-            Thánh Lễ Mừng Kính Thánh Phao-lô Tông Đồ Trở Lại - Bổn Mạng Giáo
-            Xứ
-          </h3>
-          <p class="card-desc">
-            Thánh lễ do Cha Nguyên Tổng Đại Diện Luy Gonzaga Huỳnh Phước Lâm
-            chủ sự cử hành vào lúc 09h30 ngày 25/01/2026...
-          </p>
-          <span class="card-date">20/01/2026</span>
-          <a href="bon-mang-giao-xu.html" class="card-link">Xem chi tiết ➔</a>
-        </div>
-      </article>
+      <!-- Lưới bài viết -->
+      <div class="news-grid">
+        <!-- BÀI 49: Lời Cảm Ơn Cha Sở 2026 -->
+        <article class="card" data-category="tin-tuc">
+          <a href="loi-cam-on-cha-so-2026.html">
+            <img
+              src="/img/loi_cam_on_cha_so.jpg"
+              alt="Lời Cảm Ơn Cha Sở"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Tin Giáo Xứ</span>
+            <h3 class="card-title">
+              <a
+                href="loi-cam-on-cha-so-2026.html"
+                style="text-decoration: none; color: inherit"
+                >LỜI CẢM ƠN CHA SỞ</a
+              >
+            </h3>
+            <p class="card-desc">
+              Chúng con xin chân thành cảm ơn Cha Sở Phanxicô Xaviê Trịnh Quốc
+              Đạt đã yêu thương, quan tâm và tạo điều kiện cho Huynh trưởng – Dự
+              trưởng Giáo xứ Hoà Giang...
+            </p>
+            <p class="card-date">22/08/2026</p>
+            <a href="loi-cam-on-cha-so-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 48: Thánh Lễ Bổn Mạng Khu 1 – Đức Maria Nữ Vương 2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="thanh-le-bon-mang-khu-1-2026.html">
+            <img
+              src="/img/bon_mang_khu_1.jpg"
+              alt="Thánh Lễ Bổn Mạng Khu 1 – Đức Maria Nữ Vương"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="thanh-le-bon-mang-khu-1-2026.html"
+                style="text-decoration: none; color: inherit"
+                >THÁNH LỄ BỔN MẠNG KHU 1 – ĐỨC MARIA NỮ VƯƠNG</a
+              >
+            </h3>
+            <p class="card-desc">
+              “Tôi đây là nữ tỳ của Chúa.” (Lc 1,26-38). Trong niềm vui mừng
+              kính Đức Maria Nữ Vương, cộng đoàn Khu 1 hân hoan dâng lên Mẹ
+              những lời kinh...
+            </p>
+            <p class="card-date">21/08/2026</p>
+            <a href="thanh-le-bon-mang-khu-1-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 47: Thánh Lễ Rước Lễ Lần Đầu – Mừng Kính Đức Mẹ Hồn Xác Lên Trời 2026 -->
+        <article class="card" data-category="tin-tuc">
+          <a href="thanh-le-ruoc-le-lan-dau-2026.html">
+            <img
+              src="/img/thanh_le_ruoc_le_lan_dau_2026.jpg"
+              alt="Thánh Lễ Rước Lễ Lần Đầu – Mừng Kính Đức Mẹ Hồn Xác Lên Trời"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Tin Tức</span>
+            <h3 class="card-title">
+              <a
+                href="thanh-le-ruoc-le-lan-dau-2026.html"
+                style="text-decoration: none; color: inherit"
+                >THÁNH LỄ RƯỚC LỄ LẦN ĐẦU – MỪNG KÍNH ĐỨC MẸ HỒN XÁC LÊN TRỜI</a
+              >
+            </h3>
+            <p class="card-desc">
+              Trong niềm vui mừng kính Đức Maria Hồn Xác Lên Trời, 16 em thiếu
+              nhi Giáo xứ Hòa Giang hân hoan bước đến bàn tiệc Thánh Thể...
+            </p>
+            <p class="card-date">15/08/2026</p>
+            <a href="thanh-le-ruoc-le-lan-dau-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 46: Dọn Lòng - Tập Nghi Thức 2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="don-long-tap-nghi-thuc-2026.html">
+            <img
+              src="/img/tap_nghi_thuc_2026.jpg"
+              alt="Dọn Lòng - Tập Nghi Thức 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="don-long-tap-nghi-thuc-2026.html"
+                style="text-decoration: none; color: inherit"
+                >DỌN LÒNG – TẬP NGHI THỨC</a
+              >
+            </h3>
+            <p class="card-desc">
+              Một buổi tối cùng nhau dọn lòng, tập nghi thức và chuẩn bị thật
+              sốt sắng, để sẵn sàng đón Chúa vào lòng trong ngày mai.
+            </p>
+            <p class="card-date">14/08/2026</p>
+            <a href="don-long-tap-nghi-thuc-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 45: Thánh Lễ Rước Lễ Lần Đầu 2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="ruoc-le-lan-dau-2026.html">
+            <img
+              src="img/ruoc_le_lan_dau_2026.jpg"
+              alt="Thánh Lễ Rước Lễ Lần Đầu 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="ruoc-le-lan-dau-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Thánh Lễ Rước Lễ Lần Đầu</a
+              >
+            </h3>
+            <p class="card-desc">
+              Một ngày hồng phúc khi các em nhỏ lần đầu tiên được đón Chúa Giêsu
+              Thánh Thể vào tâm hồn. Kính mời cộng đoàn cùng hiệp thông cầu
+              nguyện và chung vui trong ngày đặc biệt này.
+            </p>
+            <p class="card-date">15/08/2026</p>
+            <a href="ruoc-le-lan-dau-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 44: Khám Bệnh – Cấp Phát Thuốc Miễn Phí 2026 -->
+        <article class="card" data-category="hoat-dong">
+          <a href="kham-benh-cap-thuoc-mien-phi-2026.html">
+            <img
+              src="img/cap_thuoc_mien_phi.jpg"
+              alt="Khám Bệnh – Cấp Phát Thuốc Miễn Phí 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">BÁC ÁI</span>
+            <h3 class="card-title">
+              <a
+                href="kham-benh-cap-thuoc-mien-phi-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Khám Bệnh – Cấp Phát Thuốc Miễn Phí Dành Cho Bà Con</a
+              >
+            </h3>
+            <p class="card-desc">
+              Giáo xứ Hòa Giang chào đón đoàn y, bác sĩ và nhân viên y tế đến
+              thăm khám, tư vấn sức khỏe và cấp phát thuốc miễn phí cho người có
+              hoàn cảnh khó khăn.
+            </p>
+            <p class="card-date">01/08/2026</p>
+            <a href="kham-benh-cap-thuoc-mien-phi-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 43: Ơn Đại Xá Portiuncula 2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="on-dai-xa-portiuncula-2026.html">
+            <img
+              src="./img/on_dai_xa.jpg"
+              alt="Ơn Đại Xá Portiuncula 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="on-dai-xa-portiuncula-2026.html"
+                style="text-decoration: none; color: inherit"
+                >ƠN ĐẠI XÁ PORTIUNCULA [Trưa 01/08 - Đêm 02/08]</a
+              >
+            </h3>
+            <p class="card-desc">
+              Ơn Đại Xá Portiuncula là Ơn mà Thánh Phanxicô thành Assisi đã xin
+              Chúa Giêsu ban cho các tín hữu. Cùng tìm hiểu nguồn gốc và các
+              điều kiện để lãnh nhận ơn đại xá.
+            </p>
+            <p class="card-date">31/07/2026</p>
+            <a href="on-dai-xa-portiuncula-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 42: Tổng Kết Trại Hè "Mầm Xanh Tin Yêu" 2026 -->
+        <article class="card" data-category="xu-doan">
+          <a href="ket-thuc-trai-he-2026.html">
+            <img
+              src="./img/ket_thuc_trai_he_2026.jpg"
+              alt="Tổng Kết Trại Hè Mầm Xanh Tin Yêu 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">THIẾU NHI</span>
+            <h3 class="card-title">
+              <a
+                href="ket-thuc-trai-he-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Khép Lại Trại Hè "Mầm Xanh Tin Yêu" 2026</a
+              >
+            </h3>
+            <p class="card-desc">
+              Khép lại Trại hè "Mầm Xanh Tin Yêu", điều còn đọng lại không chỉ
+              là những khoảnh khắc đẹp mà còn là biết bao tình thương và sự hy
+              sinh âm thầm.
+            </p>
+            <p class="card-date">27/07/2026</p>
+            <a href="ket-thuc-trai-he-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 41: Cơm Chiều Và Lửa Trại 2026 -->
+        <article class="card" data-category="xu-doan">
+          <a href="com-chieu-va-lua-trai-2026.html">
+            <img
+              src="./img/com_chieu_va_lua_trai_2026.jpg"
+              alt="Cơm Chiều Và Lửa Trại - Trại Hè 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">THIẾU NHI</span>
+            <h3 class="card-title">
+              <a
+                href="com-chieu-va-lua-trai-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Cơm Chiều Và Lửa Trại</a
+              >
+            </h3>
+            <p class="card-desc">
+              Bữa cơm chiều ấm áp và đêm lửa trại bùng cháy ngọn lửa hiệp nhất,
+              nối kết tình huynh đệ trong ngày hội trại hè 2026.
+            </p>
+            <p class="card-date">27/07/2026</p>
+            <a href="com-chieu-va-lua-trai-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 40: Trò Chơi Lớn Trại Hè 2026 -->
+        <article class="card" data-category="xu-doan">
+          <a href="tro-choi-lon-2026.html">
+            <img
+              src="./img/tro_choi_lon.jpg"
+              alt="Trò Chơi Lớn - Trại Hè 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">THIẾU NHI</span>
+            <h3 class="card-title">
+              <a
+                href="tro-choi-lon-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Trò Chơi Lớn</a
+              >
+            </h3>
+            <p class="card-desc">
+              Hành trình vượt thử thách đầy gay cấn, sôi nổi và gắn kết trong
+              chương trình Trò Chơi Lớn của trại hè 2026.
+            </p>
+            <p class="card-date">26/07/2026</p>
+            <a href="tro-choi-lon-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 39: Chấm Bảng Trại Và Cơm Trưa 2026 -->
+        <article class="card" data-category="xu-doan">
+          <a href="cham-bang-trai-2026.html">
+            <img
+              src="./img/cham_ban_trai_2026.jpg"
+              alt="Chấm Bảng Trại Và Cơm Trưa - Trại Hè 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">THIẾU NHI</span>
+            <h3 class="card-title">
+              <a
+                href="cham-bang-trai-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Chấm Bảng Trại Và Cơm Trưa</a
+              >
+            </h3>
+            <p class="card-desc">
+              Hoạt động chấm điểm bảng trại và quây quần bên bữa cơm trưa ấm
+              cúng trong ngày hội trại hè 2026.
+            </p>
+            <p class="card-date">26/07/2026</p>
+            <a href="cham-bang-trai-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 38: Trò Chơi Sinh Hoạt & Đố Vui Kinh Thánh 2026 -->
+        <article class="card" data-category="xu-doan">
+          <a href="tro-choi-sh-do-vui-tk-2026.html">
+            <img
+              src="./img/tro_choi_sh_do_vui_tk_2026.jpg"
+              alt="Trò Chơi Sinh Hoạt & Đố Vui Kinh Thánh Trại Hè 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">THIẾU NHI</span>
+            <h3 class="card-title">
+              <a
+                href="tro-choi-sh-do-vui-tk-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Trò Chơi Sinh Hoạt & Đố Vui Kinh Thánh</a
+              >
+            </h3>
+            <p class="card-desc">
+              Những tiếng cười giòn tan, những màn tranh tài sôi nổi và những
+              câu hỏi Kinh Thánh ý nghĩa đã làm nên một bầu khí tràn đầy niềm
+              vui.
+            </p>
+            <p class="card-date">26/07/2026</p>
+            <a href="tro-choi-sh-do-vui-tk-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 37: Thánh Lễ - Ăn Sáng - Nghi Thức Chào Cờ Trại Hè 2026 -->
+        <article class="card" data-category="xu-doan">
+          <a href="thanh-le-chao-co-chuan-bi-nhap-trai-2026.html">
+            <img
+              src="./img/thanh_le_chao_co_chuan_bi_nhap_trai_2026.jpg"
+              alt="Thánh Lễ - Ăn Sáng - Nghi Thức Chào Cờ Trại Hè 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">PHUNG VU</span>
+            <h3 class="card-title">
+              <a
+                href="thanh-le-chao-co-chuan-bi-nhap-trai-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Thánh Lễ - Ăn Sáng - Nghi Thức Chào Cờ Trại Hè 2026</a
+              >
+            </h3>
+            <p class="card-desc">
+              Một ngày trại hè bắt đầu bằng Thánh lễ sốt sắng, bữa sáng ấm áp và
+              nghi thức Chào cờ đầy trang nghiêm mở đầu hành trình "Mầm Xanh Tin
+              Yêu".
+            </p>
+            <p class="card-date">25/07/2026</p>
+            <a
+              href="thanh-le-chao-co-chuan-bi-nhap-trai-2026.html"
+              class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 36: Tĩnh Tâm Chuẩn Bị Mừng Bổn Mạng Hội Đồng Mục Vụ Giáo Xứ Hòa Giang 2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="mung-bon-mang-2026.html">
+            <img
+              src="./img/mung_bon_mang_2026.jpg"
+              alt="Tĩnh Tâm Chuẩn Bị Mừng Bổn Mạng HĐMV Giáo Xứ Hòa Giang 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">PHUNG VU</span>
+            <h3 class="card-title">
+              <a
+                href="mung-bon-mang-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Tĩnh Tâm Chuẩn Bị Mừng Bổn Mạng Hội Đồng Mục Vụ Giáo Xứ Hòa
+                Giang</a
+              >
+            </h3>
+            <p class="card-desc">
+              Quý thành viên Hội đồng Mục vụ Giáo xứ Hòa Giang đã cùng quy tụ
+              tham dự giờ tĩnh tâm để chuẩn bị tâm hồn mừng kính hai Thánh Bổn
+              mạng.
+            </p>
+            <p class="card-date">24/07/2026</p>
+            <a href="mung-bon-mang-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 35: Nhá hàng trại hè 2026 - Mầm Xanh Tin Yêu -->
+        <article class="card" data-category="xu-doan">
+          <a href="ki-niem-trai-he-2026.html">
+            <img
+              src="./img/ki_niem_trai_he_2026.jpg"
+              alt="Ký Ức Trại Hè 2026 - Mầm Xanh Tin Yêu"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">THIẾU NHI</span>
+            <h3 class="card-title">
+              <a
+                href="ki-niem-trai-he-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Mùa Hè Này, Chúng Mình Đã Cùng Nhau Viết Nên Những Ký Ức Đẹp
+                Nhất!</a
+              >
+            </h3>
+            <p class="card-desc">
+              "Nhá hàng" trước vài khoảnh khắc của Trại hè 2026. Album đầy đủ
+              đang trên đường đến!
+            </p>
+            <p class="card-date">23/07/2026</p>
+            <a href="ki-niem-trai-he-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 34: Thánh Lễ Rước Lễ Trọng Thể 2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="thanh-le-rltt-2026.html">
+            <img
+              src="./img/thanh_le_rltt_2026.jpg"
+              alt="Thánh Lễ Rước Lễ Trọng Thể 2026 - Giáo Xứ Hòa Giang"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">PHỤNG VỤ</span>
+            <h3 class="card-title">
+              <a
+                href="thanh-le-rltt-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Thánh Lễ Rước Lễ Trọng Thể Dành Cho Các Em Thiếu Nhi 2026</a
+              >
+            </h3>
+            <p class="card-desc">
+              Trong bầu khí trang nghiêm và sốt sắng, Thánh lễ Rước Lễ Trọng Thể
+              đã diễn ra, ghi dấu một cột mốc ý nghĩa trong hành trình đức tin
+              của các em thiếu nhi.
+            </p>
+            <p class="card-date">19/07/2026</p>
+            <a href="thanh-le-rltt-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 33: Tri Ân Và Chia Tay Quý Thầy Tiền Chủng Viện Têrêsa 2026 -->
+        <article class="card" data-category="xu-doan">
+          <a href="chia-tay-cac-thay-2026.html">
+            <img
+              src="./img/chia_tay_cac_thay_2026.jpg"
+              alt="Tri Ân Và Chia Tay Quý Thầy Tiền Chủng Viện Têrêsa"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Xứ Đoàn</span>
+            <h3 class="card-title">
+              <a
+                href="chia-tay-cac-thay-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Tri Ân Quý Thầy Tiền Chủng Viện Têrêsa Sau 1 Tháng Đồng Hành</a
+              >
+            </h3>
+            <p class="card-desc">
+              Khép lại một tháng đồng hành cùng Giáo xứ, xin chân thành cảm ơn
+              Thầy và hai chú đã tận tâm dạy đàn, tập hát, đồng hành cùng thiếu
+              nhi và chuẩn bị Trại hè.
+            </p>
+            <p class="card-date">18/07/2026</p>
+            <a href="chia-tay-cac-thay-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 32: Phút Hồi Tâm - Lớp Bao Đồng 2026 -->
+        <article class="card" data-category="xu-doan">
+          <a href="phut-hoi-tam-2026.html">
+            <img
+              src="./img/phut_hoi_tam_2026.jpg"
+              alt="Phút Hồi Tâm - Lớp Bao Đồng Giáo Xứ Hòa Giang"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">PHỤNG VỤ</span>
+            <h3 class="card-title">
+              <a
+                href="phut-hoi-tam-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Phút Hồi Tâm - Lớp Bao Đồng</a
+              >
+            </h3>
+            <p class="card-desc">
+              Trong bầu khí thinh lặng và linh thiêng, các em thiếu nhi đã có
+              những giây phút lắng đọng để nhìn lại bản thân, suy ngẫm về tình
+              yêu và sự hy sinh của ba mẹ.
+            </p>
+            <p class="card-date">17/07/2026</p>
+            <a href="phut-hoi-tam-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 31: Thánh Lễ Rước Lễ Trọng Thể & Tuyên Hứa 2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="tuyen-hua-bao-dong-2026.html">
+            <img
+              src="./img/tuyen_hua_bao_dong_2026.jpg"
+              alt="Thánh Lễ Rước Lễ Trọng Thể - Giáo Xứ Hòa Giang"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="tuyen-hua-bao-dong-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Thánh Lễ Rước Lễ Trọng Thể Dành Cho Các Em Thiếu Nhi 2026</a
+              >
+            </h3>
+            <p class="card-desc">
+              Kính mời quý cộng đoàn hiệp ý cầu nguyện và tham dự Thánh Lễ Rước
+              Lễ Trọng Thể cho các em thiếu nhi vào lúc 07g30, Chúa Nhật
+              19/07/2026.
+            </p>
+            <p class="card-date">16/07/2026</p>
+            <a href="tuyen-hua-bao-dong-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 30: Xin Giới Thiệu Những Chiến Binh Của "Mầm Xanh Tin Yêu"! -->
+        <article class="card" data-category="xu-doan">
+          <a href="chien-binh-2026.html">
+            <img
+              src="./img/chien_binh_2026.jpg"
+              alt="Những Chiến Binh Của Mầm Xanh Tin Yêu – Trại Hè 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Xứ Đoàn</span>
+            <h3 class="card-title">
+              <a
+                href="chien-binh-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Xin Giới Thiệu Những Chiến Binh Của "Mầm Xanh Tin Yêu"!</a
+              >
+            </h3>
+            <p class="card-desc">
+              Mỗi đội một màu sắc, một cá tính, nhưng cùng chung một mục tiêu:
+              Chơi hết mình – Gắn kết hết sức – Lưu giữ thật nhiều kỷ niệm!
+            </p>
+            <p class="card-date">13/07/2026</p>
+            <a href="chien-binh-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 29: Sân Khấu Đã Sẵn Sàng - Trại Hè 2026 -->
+        <article class="card" data-category="xu-doan">
+          <a href="san-khau-san-sang-2026.html">
+            <img
+              src="./img/san_khau_san_sang_2026.jpg"
+              alt="Sân Khấu Đã Sẵn Sàng – Trại Hè 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Xứ Đoàn</span>
+            <h3 class="card-title">
+              <a
+                href="san-khau-san-sang-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Sân Khấu Đã Sẵn Sàng – Hẹn Gặp Nhau Tại "Mầm Xanh Tin Yêu"!</a
+              >
+            </h3>
+            <p class="card-desc">
+              Sân khấu, trò chơi và tất cả mọi người đã sẵn sàng cho ngày hội
+              lớn 23.07.2026. Cùng đếm ngược cho Trại Hè 2026!
+            </p>
+            <p class="card-date">12/07/2026</p>
+            <a href="san-khau-san-sang-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 28: Không Khí Trại Hè 2026 – "Mầm Xanh Tin Yêu" -->
+        <article class="card" data-category="xu-doan">
+          <a href="khong-khi-trai-he-2026.html">
+            <img
+              src="./img/khong_khi_trai_he_2026.jpg"
+              alt="Không Khí Trại Hè 2026 – Mầm Xanh Tin Yêu"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Xứ Đoàn</span>
+            <h3 class="card-title">
+              <a
+                href="khong-khi-trai-he-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Không Khí Trại Hè 2026 – "Mầm Xanh Tin Yêu" Đang Nóng Dần
+                Lên!</a
+              >
+            </h3>
+            <p class="card-desc">
+              Quý thầy cùng các anh chị Huynh trưởng đang miệt mài, tất bật
+              "test game", từng hoạt động và từng điều bất ngờ cho mùa hè "Mầm
+              Xanh Tin Yêu".
+            </p>
+            <p class="card-date">11/07/2026</p>
+            <a href="khong-khi-trai-he-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 27: Giáo Phận Long Xuyên - Bổ Nhiệm và Thuyên Chuyển Linh Mục tháng 07/2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="bo-nhiem-lmuc-2026.html">
+            <img
+              src="./img/bo_nhiem_lmuc_2026.jpg"
+              alt="Giáo Phận Long Xuyên - Bổ Nhiệm và Thuyên Chuyển Linh Mục tháng 07/2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="bo-nhiem-lmuc-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Giáo Phận Long Xuyên - Bổ Nhiệm và Thuyên Chuyển Linh Mục tháng
+                07/2026</a
+              >
+            </h3>
+            <p class="card-desc">
+              Thông tin về quyết định bổ nhiệm và thuyên chuyển quý cha trong
+              Giáo phận Long Xuyên tháng 07/2026.
+            </p>
+            <p class="card-date">01/07/2026</p>
+            <a href="bo-nhiem-lmuc-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 26: Thánh Lễ Tạ Ơn – 09 Năm Hồng Ân Linh Mục -->
+        <article class="card" data-category="thong-bao">
+          <a href="9-nam-hong-an-lmuc.html">
+            <img
+              src="./img/9_nam_hong_an_lmuc.jpg"
+              alt="Thánh Lễ Tạ Ơn – 09 Năm Hồng Ân Linh Mục"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">PHỤNG VỤ</span>
+            <h3 class="card-title">
+              <a
+                href="9-nam-hong-an-lmuc.html"
+                style="text-decoration: none; color: inherit"
+                >Thánh Lễ Tạ Ơn – 09 Năm Hồng Ân Linh Mục</a
+              >
+            </h3>
+            <p class="card-desc">
+              Cộng đoàn Giáo xứ Hòa Giang hiệp dâng Thánh lễ mừng 09 năm Hồng ân
+              Linh mục của Cha sở Phanxicô Xaviê và Cha giáo Giuse.
+            </p>
+            <p class="card-date">30/06/2026</p>
+            <a href="9-nam-hong-an-lmuc.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 25: Mừng Bổn Mạng Giáo Khu 2A – Thánh Phê-rô -->
+        <article class="card" data-category="thong-bao">
+          <a href="bon-mang-gk-2a.html">
+            <img
+              src="./img/bon_mang_gk_2a.jpg"
+              alt="Mừng Bổn Mạng Giáo Khu 2A - Thánh Phê-rô"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">PHỤNG VỤ</span>
+            <h3 class="card-title">
+              <a
+                href="bon-mang-gk-2a.html"
+                style="text-decoration: none; color: inherit"
+                >Mừng Bổn Mạng Giáo Khu 2A – Thánh Phê-rô</a
+              >
+            </h3>
+            <p class="card-desc">
+              Trong bầu khí trang nghiêm và sốt sắng, Giáo khu 2A – Giáo xứ Hòa
+              Giang đã hân hoan cử hành Thánh lễ mừng kính Thánh quan thầy
+              Phê-rô.
+            </p>
+            <p class="card-date">29/06/2026</p>
+            <a href="bon-mang-gk-2a.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 24: Trại Hè "Mầm Xanh Tình Yêu" 2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="mam-xanh-tin-yeu.html">
+            <img
+              src="./img/mam_xanh_tin_yeu.jpg"
+              alt="Trại Hè Mầm Xanh Tình Yêu 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">THIẾU NHI</span>
+            <h3 class="card-title">
+              <a
+                href="mam-xanh-tin-yeu.html"
+                style="text-decoration: none; color: inherit"
+                >Trại Hè "Mầm Xanh Tình Yêu" 2026</a
+              >
+            </h3>
+            <p class="card-desc">
+              Các trại sinh đã sẵn sàng vui chơi, chinh phục thử thách tại Đức
+              Mẹ Núi Trầu và lớn lên trong Đức Tin chưa?
+            </p>
+            <p class="card-date">27/06/2026</p>
+            <a href="mam-xanh-tin-yeu.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 23: Thánh Lễ Tạ Ân Hồng Ân Linh Mục -->
+        <article class="card" data-category="thong-bao">
+          <a href="thanh_le_ta_on_lmuc.html">
+            <img
+              src="./img/thanh_le_ta_on_lmuc.jpg"
+              alt="Thánh Lễ Tạ Ân Hồng Ân Linh Mục"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">PHỤNG VỤ</span>
+            <h3 class="card-title">
+              <a
+                href="thanh_le_ta_on_lmuc.html"
+                style="text-decoration: none; color: inherit"
+                >Thánh Lễ Tạ Ân Hồng Ân Linh Mục</a
+              >
+            </h3>
+            <p class="card-desc">
+              Cộng đoàn Giáo xứ Hòa Giang hân hoan mừng Kỷ niệm 09 năm Hồng ân
+              Linh mục của Cha sở Phanxicô Xaviê Trịnh Quốc Đạt.
+            </p>
+            <p class="card-date">25/06/2026</p>
+            <a href="thanh_le_ta_on_lmuc.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 22: Lần Chuỗi Mân Côi Và Sinh Hoạt Vòng Tròn -->
+        <article class="card" data-category="thong-bao">
+          <a href="lan-chuoi-man-coi.html">
+            <img
+              src="./img/lan_chuoi_man_coi.jpg"
+              alt="Lần Chuỗi Mân Côi Và Sinh Hoạt Vòng Tròn"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">PHỤNG VỤ</span>
+            <h3 class="card-title">
+              <a
+                href="lan-chuoi-man-coi.html"
+                style="text-decoration: none; color: inherit"
+                >Lần Chuỗi Mân Côi Và Sinh Hoạt Vòng Tròn</a
+              >
+            </h3>
+            <p class="card-desc">
+              Các bạn thiếu nhi sốt sắng lần chuỗi Mân Côi dâng kính Đức Mẹ và
+              tham gia sinh hoạt vòng tròn, vui chơi gắn kết đầy ý nghĩa.
+            </p>
+            <p class="card-date">24/06/2026</p>
+            <a href="lan-chuoi-man-coi.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 21: Thánh Lễ Ban Bí Tích Thêm Sức -->
+        <article class="card" data-category="thong-bao">
+          <a href="them-suc-2026.html">
+            <img
+              src="./img/them_suc_2026.jpg"
+              alt="Thánh Lễ Ban Bí Tích Thêm Sức"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">PHỤNG VỤ</span>
+            <h3 class="card-title">
+              <a
+                href="them-suc-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Thánh Lễ Ban Bí Tích Thêm Sức</a
+              >
+            </h3>
+            <p class="card-desc">
+              Thánh Lễ Ban Bí Tích Thêm Sức do Đức Cha Giuse Trần Văn Toản chủ
+              sự vào lúc 09h30 ngày 14/06/2026.
+            </p>
+            <p class="card-date">11/06/2026</p>
+            <a href="them-suc-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 20: Chương Trình Kinh Lý Mục Vụ & Thánh Lễ Ban Bí Tích Thêm Sức -->
+        <article class="card" data-category="thong-bao">
+          <a href="chuong-trinh-kinh-ly-2026.html">
+            <img
+              src="img/chuong_trinh_kinh_ly_2026.jpg"
+              alt="Chương Trình Kinh Lý Mục Vụ & Thánh Lễ Ban Bí Tích Thêm Sức"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="truong-trinh-kinh-ly-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Chương Trình Kinh Lý Mục Vụ & Thánh Lễ Ban Bí Tích Thêm Sức</a
+              >
+            </h3>
+            <p class="card-desc">
+              Giáo xứ Hòa Giang hân hoan chào đón chương trình Kinh Lý Mục Vụ và
+              Thánh Lễ Ban Bí Tích Thêm Sức do Giáo phận Long Xuyên cử hành.
+            </p>
+            <p class="card-date">08/06/2026</p>
+            <a href="chuong-trinh-kinh-ly-2026" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 19: Thánh Lễ Tổng Kết Năm Học Giáo Lý 2025-2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="tong-ket-nam-hoc.html">
+            <img
+              src="./img/tong_ket_2025_2026.jpg"
+              alt="Thánh Lễ Tổng Kết Năm Học Giáo Lý 2025-2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">THIẾU NHI</span>
+            <h3 class="card-title">
+              <a
+                href="tong-ket-nam-hoc.html"
+                style="text-decoration: none; color: inherit"
+                >Thánh Lễ Tổng Kết Năm Học Giáo Lý 2025-2026</a
+              >
+            </h3>
+            <p class="card-desc">
+              Cộng đoàn giáo xứ long trọng cử hành Thánh lễ tổng kết năm học
+              giáo lý 2025-2026, tạ ơn Chúa vì một năm học nhiều hồng ân.
+            </p>
+            <p class="card-date">31/05/2026</p>
+            <a href="tong-ket-nam-hoc.html" class="card-link">Xem Chi Tiết ➔</a>
+          </div>
+        </article>
+        <!-- BÀI 18: Bế Mạc Tháng Hoa -->
+        <article class="card" data-category="thong-bao">
+          <a href="be-mac-dang-hoa.html">
+            <img
+              src="./img/be_mac_dang_hoa_2026.jpg"
+              alt="Bế Mạc Tháng Hoa"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Phụng Vụ</span>
+            <h3 class="card-title">
+              <a
+                href="be-mac-dang-hoa.html"
+                style="text-decoration: none; color: inherit"
+                >Bế Mạc Tháng Hoa</a
+              >
+            </h3>
+            <p class="card-desc">
+              Cộng đoàn giáo xứ long trọng cử hành thánh lễ và nghi thức bế mạc
+              tháng kính Đức Mẹ, dâng lên Mẹ những tâm tình thành kính.
+            </p>
+            <p class="card-date">31/05/2026</p>
+            <a href="be-mac-dang-hoa.html" class="card-link">Xem Chi Tiết ➔</a>
+          </div>
+        </article>
+        <!-- BÀI 17: Rao Báo Truyền Chức Phó Tế & Linh Mục - Giáo Phận Long Xuyên 06/2026 -->
+        <article class="card" data-category="thong-bao">
+          <a href="rao-bao-truyen-chuc.html">
+            <img
+              src="./img/truyen_truc_pho_te_2026.jpg"
+              alt="Rao Báo Truyền Chức Phó Tế & Linh Mục - Giáo Phận Long Xuyên 06/2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="rao-bao-truyen-chuc.html"
+                style="text-decoration: none; color: inherit"
+                >Rao Báo Truyền Chức Phó Tế & Linh Mục - Giáo Phận Long Xuyên
+                06/2026</a
+              >
+            </h3>
+            <p class="card-desc">
+              Xin cộng đoàn tiếp tục cầu nguyện cho quý Thầy, đặc biệt là Thầy
+              Phê-rô Nguyễn Chí Thanh từng phục vụ tại Giáo xứ chúng ta.
+            </p>
+            <p class="card-date">28/05/2026</p>
+            <a href="rao-bao-truyen-chuc.html" class="card-link"
+              >Xem Chi Tiết ➔</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 16: Hành Hương Đức Mẹ Núi Trầu -->
+        <article class="card" data-category="thong-bao">
+          <a href="hanh-huong-duc-me.html">
+            <img
+              src="./img/hanh_huong_2026.jpg"
+              alt="Hành Hương Đức Mẹ Núi Trầu"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Phụng Vụ</span>
+            <h3 class="card-title">
+              <a
+                href="hanh-huong-duc-me.html"
+                style="text-decoration: none; color: inherit"
+                >Hành Hương Đức Mẹ Núi Trầu</a
+              >
+            </h3>
+            <p class="card-desc">
+              Cộng đoàn giáo xứ tham gia chuyến hành hương kính Đức Mẹ tại trung
+              tâm Núi Trầu, sốt sắng dâng lời kinh nguyện và phó thác gia đình.
+            </p>
+            <p class="card-date">01/05/2026</p>
+            <a href="hanh-huong-duc-me.html" class="card-link"
+              >Xem Chi Tiết ➔</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 15: Chúa Nhật Tuần IV Phục Sinh - Ngày cầu cho ơn thiên triệu -->
+        <article class="card" data-category="thong-bao">
+          <a href="cn4-phuc-sinh.html">
+            <img
+              src="./img/cn4_phuc_sinh_2026.jpg"
+              alt="Chúa Nhật Tuần IV Phục Sinh - Ngày cầu cho ơn thiên triệu"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Phụng Vụ</span>
+            <h3 class="card-title">
+              <a
+                href="cn4-phuc-sinh.html"
+                style="text-decoration: none; color: inherit"
+                >Chúa Nhật Tuần IV Phục Sinh - Ngày cầu cho ơn thiên triệu</a
+              >
+            </h3>
+            <p class="card-desc">
+              Cộng đoàn giáo xứ hiệp ý cầu nguyện cho ơn thiên triệu, mừng kính
+              Chúa Giê-su - Mục Tử Nhân Lành luôn dẫn dắt và quan phòng đoàn
+              chiên.
+            </p>
+            <p class="card-date">26/04/2026</p>
+            <a href="cn4-phuc-sinh.html" class="card-link">Xem Chi Tiết ➔</a>
+          </div>
+        </article>
+        <!-- BÀI 14: Thứ Bảy Tuần Thánh - Vọng Phục Sinh -->
+        <article class="card" data-category="thong-bao">
+          <a href="vong-phuc-sinh-2026.html">
+            <img
+              src="./img/vong_phuc_sinh_2026.jpg"
+              alt="Thứ Bảy Tuần Thánh - Vọng Phục Sinh"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Phụng Vụ</span>
+            <h3 class="card-title">
+              <a
+                href="vong-phuc-sinh-2026.html"
+                style="text-decoration: none; color: inherit"
+                >Thứ Bảy Tuần Thánh - Vọng Phục Sinh</a
+              >
+            </h3>
+            <p class="card-desc">
+              Cộng đoàn giáo xứ long trọng cử hành Đêm Canh Thức Vượt Qua - Vọng
+              Phục Sinh, mừng Chúa Giê-su Kitô đã khải hoàn chiến thắng tử thần.
+            </p>
+            <p class="card-date">05/04/2026</p>
+            <a href="vong-phuc-sinh-2026.html" class="card-link"
+              >Xem Chi Tiết ➔</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 13: Thứ Sáu Tuần Thánh -->
+        <article class="card" data-category="thong-bao">
+          <a href="thu-sau-tuan-thanh.html">
+            <img
+              src="./img/thu_sau_tuan_thanh_2026.jpg"
+              alt="Thứ Sáu Tuần Thánh - Tưởng Niệm Cuộc Thương Khó Của Chúa Giê-su"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Phụng Vụ</span>
+            <h3 class="card-title">
+              <a
+                href="thu-sau-tuan-thanh.html"
+                style="text-decoration: none; color: inherit"
+                >Thứ Sáu Tuần Thánh - Tưởng Niệm Cuộc Thương Khó Của Chúa
+                Giê-su</a
+              >
+            </h3>
+            <p class="card-desc">
+              Cùng cộng đoàn hiệp thông tưởng niệm cuộc thương khó và cái chết
+              trên thập giá của Chúa Giê-su Kitô trong ngày Thứ Sáu Tuần Thánh.
+            </p>
+            <p class="card-date">03/04/2026</p>
+            <a href="thu-sau-tuan-thanh.html" class="card-link"
+              >Xem Chi Tiết ➔</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 12: Cáo Phó Đức Hồng Y -->
+        <article class="card" data-category="thong-bao">
+          <a href="cao-pho-duc-hong-y.html">
+            <img
+              src="./img/cao_pho_duc_hong_y.jpg"
+              alt="Cáo Phó Đức Cố Hồng Y Gioan Baotixita Phạm Minh Mẫn"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="cao-pho-duc-hong-y.html"
+                style="text-decoration: none; color: inherit"
+                >Cáo Phó: Đức Cố Hồng Y Gioan Baotixita Phạm Minh Mẫn Về Nhà
+                Cha</a
+              >
+            </h3>
+            <p class="card-desc">
+              Trong niềm tin vào Chúa Kitô Phục Sinh, Tổng Giáo phận Sài Gòn -
+              TP.HCM trân trọng kính báo Đức Cố Hồng Y đã an nghỉ trong Chúa.
+            </p>
+            <p class="card-date">23/03/2026</p>
+            <a href="cao-pho-duc-hong-y.html" class="card-link"
+              >Xem Chi Tiết ➔</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 11: Tuần Thánh -->
+        <article class="card" data-category="phung-vu">
+          <a href="tuan-thanh-2026.html">
+            <img
+              src="./img/tuan_thanh_2026.jpg"
+              alt="Chương Trình Phụng Vụ Tuần Thánh Và Đại Lễ Phục Sinh - Giáo Xứ Hoa Giang 2026"
+              class="card-img"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Phụng Vụ</span>
+            <h3 class="card-title">
+              <a href="tuan-thanh-2026.html"
+                >Chương Trình Phụng Vụ Tuần Thánh Và Đại Lễ Phục Sinh - Giáo Xứ
+                Hoa Giang 2026</a
+              >
+            </h3>
+            <p class="card-desc">
+              Cập nhật lịch trình chi tiết các cử hành phụng vụ trong Tuần Thánh
+              và Đại Lễ Phục Sinh của cộng đoàn giáo xứ.
+            </p>
+            <span class="card-date">23/03/2026</span>
+            <a href="tuan-thanh-2026.html" class="card-link">Xem Chi Tiết ➔</a>
+          </div>
+        </article>
+        <!-- BÀI 10: Lễ Tro -->
+        <article class="card">
+          <a href="le_tro_2026.html">
+            <img
+              src="./img/le_tro_2026.jpg"
+              alt="Lễ Tro - Mở Đầu Mùa Chay Thánh"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Phụng Vụ</span>
+            <h3 class="card-title">
+              <a
+                href="le_tro_2026.html"
+                style="text-decoration: none; color: inherit"
+                >LỄ TRO - MỞ ĐẦU MÙA CHAY THÁNH</a
+              >
+            </h3>
+            <p class="card-desc">
+              Hôm nay, cộng đoàn giáo xứ bước vào Ngày Lễ Tro, chính thức mở đầu
+              Mùa Chay Thánh...
+            </p>
+            <span class="card-date">20/02/2026</span>
+            <a href="le_tro_2026.html" class="card-link">Xem Chi Tiết &rarr;</a>
+          </div>
+        </article>
+        <!-- BÀI 9: Kết Quả Lộc Xuân 2026 -->
+        <article class="card">
+          <a href="loc-xuan-2026.html">
+            <img
+              src="./img/loc_xuan_2026.jpg"
+              alt="Kết Quả Lộc Xuân May Mắn - Giáo Xứ Hòa Giang 2026"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Thông Báo</span>
+            <h3 class="card-title">
+              <a
+                href="loc-xuan-2026.html"
+                style="text-decoration: none; color: inherit"
+              >
+                KẾT QUẢ LỘC XUÂN MAY MẮN - GIÁO XỨ HÒA GIANG
+              </a>
+            </h3>
+            <p class="card-desc">
+              Thời gian lãnh thưởng trong vòng 7 ngày, kể từ ngày quay số (Quá
+              thời gian 7 ngày, vé sẽ không còn giá trị để lãnh thưởng).
+            </p>
+            <span class="card-date">18/02/2026</span>
+            <a href="loc-xuan-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 8: Hội Chợ Xuân -->
+        <article class="card">
+          <a href="hoi-cho-xuan-2026.html">
+            <img
+              src="./img/hoi_cho_xuan_2026.jpg"
+              alt="Hội Chợ Xuân - Giáo Xứ Hòa Giang 2026"
+            />
+          </a>
+          <div class="card-body">
+            <span class="tag">Sinh Hoạt</span>
+            <h3 class="card-title">
+              <a
+                href="hoi-cho-xuan-2026.html"
+                style="text-decoration: none; color: inherit"
+              >
+                HỘI CHỢ XUÂN - GIÁO XỨ HÒA GIANG 2026
+              </a>
+            </h3>
+            <p class="card-desc">
+              Không khí rộn ràng, vui tươi ngập tràn trong sự kiện Hội Chợ Xuân
+              2026 tại Giáo xứ Hòa Giang, gắn kết tình thân ái đầu năm.
+            </p>
+            <span class="card-date">17/02/2026</span>
+            <a href="hoi-cho-xuan-2026.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 7: Thiếu nhi chúc Tết -->
+        <article class="card">
+          <img
+            src="./img/li_xi_tet_2026.jpg"
+            alt="Thiếu nhi chúc Tết Cha Tuyên Úy"
+          />
+          <div class="card-body">
+            <span class="tag">Thiếu Nhi</span>
+            <h3 class="card-title">
+              THIẾU NHI CHÚC TẾT CHA TUYÊN ÚY VÀ NHẬN LÌ XÌ ĐẦU NĂM
+            </h3>
+            <p class="card-desc">
+              Không khí ngày đầu năm mới thêm phần ấm áp và rộn ràng khi các em
+              thiếu nhi trong xứ đoàn tề tựu để dâng lời chúc Tết ý nghĩa lên
+              Cha Tuyên Úy và nhận những bao lì xì đầu năm...
+            </p>
+            <span class="card-date">15/02/2026</span>
+            <a href="thieu-nhi-chuc-tet.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 6: Chia sẻ quà Tết -->
+        <article class="card">
+          <img
+            src="./img/chia_se_qua_tet.jpg"
+            alt="Chia sẻ quà Tết Giáo Xứ Hòa Giang"
+          />
+          <div class="card-body">
+            <span class="tag">Thiện Nguyện</span>
+            <h3 class="card-title">
+              Chia Sẻ Quà Tết Đến Các Gia Đình & Đội Thiện Nguyện
+            </h3>
+            <p class="card-desc">
+              Chị Đoàn Triều Mến và gia đình đến Giáo Xứ Hòa Giang để cùng chia
+              sẻ những phần quà Tết cho các gia đình những người lớn tuổi và các
+              thành viên trong đội thiện nguyện...
+            </p>
+            <span class="card-date">13/02/2026</span>
+            <a href="chia-se-qua-tet.html" class="card-link"
+              >Xem Chi Tiết &rarr;</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 5: Bán hoa Tết -->
+        <article class="card">
+          <img
+            src="./img/ban_hoa_ngay_tet.jpg"
+            alt="Bán hoa Tết Giáo Xứ Hòa Giang"
+          />
+          <div class="card-body">
+            <span class="tag">Xứ Đoàn</span>
+            <h3 class="card-title">
+              Hoa Cúng Tết Giáo Xứ Hòa Giang - Phục Vụ Gia Đình & Đất Thánh
+            </h3>
+            <p class="card-desc">
+              Hoa Tết đã về đến sân nhà thờ! Kính mời Quý Cộng Đoàn đến xem, lựa
+              chọn hoặc đặt giao tận nhà để ủng hộ Xứ Đoàn...
+            </p>
+            <span class="card-date">09/02/2026</span>
+            <a href="ban-hoa-tet.html" class="card-link">Xem Chi Tiết ➔</a>
+          </div>
+        </article>
+        <!-- BÀI 4: Lịch Phụng Vụ Tết -->
+        <article class="card">
+          <img
+            src="./img/lich_phuc_vu.jpg"
+            alt="Lịch Phụng Vụ Tết Bính Ngọ 2026"
+          />
+          <div class="card-body">
+            <span class="tag">Phụng Vụ</span>
+            <h3 class="card-title">
+              Lịch Phụng Vụ & Chương Trình Vui Xuân Bính Ngọ 2026
+            </h3>
+            <p class="card-desc">
+              Thông báo chi tiết lịch Lễ Tất Niên, Giao Thừa, các Thánh Lễ Tân
+              Niên và chương trình Hội Chợ Xuân...
+            </p>
+            <span class="card-date">07/02/2026</span>
+            <a href="lich-phung-vu-tet-2026.html" class="card-link"
+              >Xem chi tiết ➔</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 3 Phát quà từ thiện -->
+        <article class="card">
+          <img src="./img/phat_qua_tu_thien.jpg" alt="Phát quà từ thiện" />
+          <div class="card-body">
+            <span class="tag">Bác Ái</span>
+            <h3 class="card-title">
+              Kết Nối Yêu Thương: Trao 250 Phần Quà Cho Bà Con Lương Giáo
+            </h3>
+            <p class="card-desc">
+              Giáo xứ Hòa Giang kết hợp cùng đoàn từ thiện của Cha Giuse...
+            </p>
+            <span class="card-date">01/02/2026</span>
+            <a href="phat-qua-tu-thien.html" class="card-link"
+              >Xem chi tiết ➔</a
+            >
+          </div>
+        </article>
+        <!-- BÀI 2: Bổn Mạng Giáo Xứ -->
+        <article class="card">
+          <img
+            src="./img/bon_mang_gx.jpg"
+            alt="Lễ Bổn Mạng Giáo Xứ Hòa Giang"
+          />
+          <div class="card-body">
+            <span class="tag">Bổn Mạng</span>
+            <h3 class="card-title">
+              Thánh Lễ Mừng Kính Thánh Phao-lô Tông Đồ Trở Lại - Bổn Mạng Giáo
+              Xứ
+            </h3>
+            <p class="card-desc">
+              Thánh lễ do Cha Nguyên Tổng Đại Diện Luy Gonzaga Huỳnh Phước Lâm
+              chủ sự cử hành vào lúc 09h30 ngày 25/01/2026...
+            </p>
+            <span class="card-date">20/01/2026</span>
+            <a href="bon-mang-giao-xu.html" class="card-link">Xem chi tiết ➔</a>
+          </div>
+        </article>
 
-      <!-- BÀI 1: Vé Số Lộc Xuân 2026 -->
-      <article class="card">
-        <img src="img/ve_so.webp" alt="Vé Số Lộc Xuân 2026" />
-        <div class="card-body">
-          <span class="tag">Xứ Đoàn</span>
-          <h3 class="card-title">Bán Vé Xổ Số Lộc Xuân Yêu Thương 2026</h3>
-          <p class="card-desc">
-            Chương trình xổ số gây quỹ đầu xuân của Xứ Đoàn Phê-rô Đoàn Công
-            Quý với nhiều giải thưởng hấp dẫn...
-          </p>
-          <span class="card-date">16/01/2026</span>
-          <a href="ve-so-loc-xuan-2026.html" class="card-link">Xem chi tiết ➔</a>
-        </div>
-      </article>
-    </div>
-  </main>
+        <!-- BÀI 1: Vé Số Lộc Xuân 2026 -->
+        <article class="card">
+          <img src="img/ve_so.webp" alt="Vé Số Lộc Xuân 2026" />
+          <div class="card-body">
+            <span class="tag">Xứ Đoàn</span>
+            <h3 class="card-title">Bán Vé Xổ Số Lộc Xuân Yêu Thương 2026</h3>
+            <p class="card-desc">
+              Chương trình xổ số gây quỹ đầu xuân của Xứ Đoàn Phê-rô Đoàn Công
+              Quý với nhiều giải thưởng hấp dẫn...
+            </p>
+            <span class="card-date">16/01/2026</span>
+            <a href="ve-so-loc-xuan-2026.html" class="card-link"
+              >Xem chi tiết ➔</a
+            >
+          </div>
+        </article>
+      </div>
+    </main>
 
-  <!-- Footer tự động nhúng qua JS -->
-  <footer id="footer-placeholder"></footer>
+    <!-- Footer tự động nhúng qua JS -->
+    <footer id="footer-placeholder"></footer>
 
-  <script src="js/script.js" defer></script>
-</body>
-
+    <script src="js/script.js" defer></script>
+  </body>
 </html>

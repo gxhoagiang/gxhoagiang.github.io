@@ -1,95 +1,143 @@
 <!doctype html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Chương Trình Kinh Lý Mục Vụ & Thánh Lễ Ban Bí Tích Thêm Sức - Giáo Xứ Hòa
+      Giang
+    </title>
+    <!-- add favicon -->
+    <!-- Favicon Google & Trình duyệt web -->
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    Chương Trình Kinh Lý Mục Vụ & Thánh Lễ Ban Bí Tích Thêm Sức - Giáo Xứ Hòa
-    Giang
-  </title>
-  <!-- add favicon -->
-  <!-- Favicon Google & Trình duyệt web -->
-  <link rel="icon" type="image/png" sizes="96x96" href="./favicon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+    <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-icon-180x180.png"
+    />
 
-  <!-- Apple Touch Icon (Dành cho iOS/Safari) -->
-  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
+    <!-- Android & PWA & Windows -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Android & PWA & Windows -->
-  <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Font chữ & File CSS giao diện (Luôn đặt dưới cùng) -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <!-- Header tự động nhúng -->
+    <header id="header-placeholder"></header>
 
-<body>
-  <!-- Header tự động nhúng -->
-  <header id="header-placeholder"></header>
+    <main class="container section-padding article-container">
+      <a href="tin-tuc.html" class="back-link"
+        >&larr; Quay lại danh sách tin tức</a
+      >
 
-  <main class="container section-padding article-container">
-    <a href="tin-tuc.html" class="back-link">&larr; Quay lại danh sách tin tức</a>
+      <article class="card" style="padding: 30px">
+        <div class="article-header">
+          <span class="tag">Thông Báo</span>
+          <h1 class="article-title" style="font-size: 1.8rem; margin-top: 10px">
+            CHƯƠNG TRÌNH KINH LÝ MỤC VỤ & THÁNH LỄ BAN BÍ TÍCH THÊM SỨC
+          </h1>
+          <p class="article-meta">Đăng ngày: 08/06/2026 | #gxhoagiang</p>
+        </div>
 
-    <article class="card" style="padding: 30px">
-      <div class="article-header">
-        <span class="tag">Thông Báo</span>
-        <h1 class="article-title" style="font-size: 1.8rem; margin-top: 10px">
-          CHƯƠNG TRÌNH KINH LÝ MỤC VỤ & THÁNH LỄ BAN BÍ TÍCH THÊM SỨC
-        </h1>
-        <p class="article-meta">Đăng ngày: 08/06/2026 | #gxhoagiang</p>
-      </div>
-
-      <img src="img/chuong_trinh_kinh_ly_2026.jpg" alt="Thánh Lễ Ban Bí Tích Thêm Sức" class="article-img" style="
+        <img
+          src="img/chuong_trinh_kinh_ly_2026.jpg"
+          alt="Thánh Lễ Ban Bí Tích Thêm Sức"
+          class="article-img"
+          style="
             width: 100% !important;
             height: auto !important;
             object-fit: contain !important;
             border-radius: 8px;
             margin-top: 15px;
             margin-bottom: 10px;
-          " />
+          "
+        />
 
-      <div style="margin-bottom: 20px">
-        <b>
-          Hôm nay, Giáo xứ Hòa Giang hân hoan chào đón chương trình Kinh Lý
-          Mục Vụ và Thánh Lễ Ban Bí Tích Thêm Sức do Giáo phận Long Xuyên cử
-          hành cho các em thiếu nhi trong giáo xứ.
-        </b>
-      </div>
+        <div style="margin-bottom: 20px">
+          <b>
+            Hôm nay, Giáo xứ Hòa Giang hân hoan chào đón chương trình Kinh Lý
+            Mục Vụ và Thánh Lễ Ban Bí Tích Thêm Sức do Giáo phận Long Xuyên cử
+            hành cho các em thiếu nhi trong giáo xứ.
+          </b>
+        </div>
 
-      <div class="article-content" style="font-size: 1.05rem; line-height: 1.7; color: #333">
-        <p style="margin-bottom: 15px">
-          Nguyện xin ơn Chúa Thánh Thần xuống trên các em đón nhận Bí Tích
-          Thêm Sức hôm nay, để các em luôn vững vàng trong đức tin, can đảm
-          làm chứng nhân cho Tin Mừng và tích cực dấn thân xây dựng cộng đoàn
-          giáo xứ ngày càng phát triển hiệp nhất trong tình yêu Chúa.
-        </p>
-      </div>
+        <div
+          class="article-content"
+          style="font-size: 1.05rem; line-height: 1.7; color: #333"
+        >
+          <p style="margin-bottom: 15px">
+            Nguyện xin ơn Chúa Thánh Thần xuống trên các em đón nhận Bí Tích
+            Thêm Sức hôm nay, để các em luôn vững vàng trong đức tin, can đảm
+            làm chứng nhân cho Tin Mừng và tích cực dấn thân xây dựng cộng đoàn
+            giáo xứ ngày càng phát triển hiệp nhất trong tình yêu Chúa.
+          </p>
+        </div>
 
-      <div class="post-gallery" data-start="" data-end=""></div>
-    </article>
-  </main>
+        <div class="post-gallery" data-start="" data-end=""></div>
+      </article>
+    </main>
 
-  <!-- Footer tự động nhúng -->
-  <footer id="footer-placeholder"></footer>
+    <!-- Footer tự động nhúng -->
+    <footer id="footer-placeholder"></footer>
 
-  <script src="js/script.js" defer></script>
-</body>
-
+    <script src="js/script.js" defer></script>
+  </body>
 </html>
